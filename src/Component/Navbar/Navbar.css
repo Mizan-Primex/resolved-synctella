@@ -1,0 +1,23 @@
+.navbarBody{
+    display: flex;
+    font-family: Roboto;
+    justify-content: space-between;
+    padding: .5rem;
+   
+}
+.links a{
+    text-decoration: none ! important;
+    margin-right: 1.5rem;
+    font-size: .95rem;
+    color: #000;
+    
+}
+.links{
+    padding: 3rem;
+
+}
+.logo img {
+    margin-left: 50px;
+     height: 60px;
+     padding: 2rem;
+ }
