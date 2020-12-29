@@ -1,0 +1,22 @@
+
+.product{
+    display: flex;
+    position: relative;
+    top: -9.35rem;
+}
+.third-img img{
+    height: 500px;
+    width: 700px;
+}
+.txt-3{
+    font-family: Roboto;
+    font-weight: 300;
+    padding: 6rem;
+}
+.txt-3 h1{
+    padding-bottom: 1rem;
+}
+.txt-3 p{
+    padding-left: 2rem;
+    font-weight: 300;
+}

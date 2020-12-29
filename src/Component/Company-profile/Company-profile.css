@@ -1,0 +1,29 @@
+.company-profile{
+    display:grid;
+    position: relative;
+    top: -8.35rem;
+}
+.company-img img{
+    position: relative;
+    height: 800px;
+    width: 99vw;
+}
+.profile{
+    position: absolute;
+    font-family: Roboto;
+    color: #fff;
+    height: 500px;
+    width: 900px;
+    padding: 8rem;
+    margin-left: 2.5rem;
+    
+}
+.profile p{
+    font-weight: 300;
+}
+.profile ul{
+    list-style: none;
+}
+.profile h1{
+    padding-bottom: 1.5rem;
+}

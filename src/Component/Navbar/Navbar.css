@@ -1,15 +1,16 @@
 .navbarBody{
     display: flex;
     font-family: Roboto;
-    justify-content: space-between;
-    padding: .5rem;
-   
+    justify-content: space-between; 
+    background-color: #f4f4f473; 
 }
 .links a{
     text-decoration: none ! important;
     margin-right: 1.5rem;
     font-size: .95rem;
     color: #000;
+    font-weight: 500;
+   
     
 }
 .links{

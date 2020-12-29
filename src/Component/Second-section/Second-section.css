@@ -1,0 +1,26 @@
+
+.second-section{
+    display: flex;
+}
+.second-section img{
+    height:749px;
+    width: 750px;
+}
+.txt-2{
+    font-family: Roboto;
+    font-weight: 300;
+    padding: 2rem;
+    position: relative;
+    top: 80px;
+}
+
+.txt-2 h1{
+    font-weight: 700;
+    font-size:40px; 
+    margin-bottom: 3rem;
+    
+}
+.txt-2 p{
+    font-size: 1rem;
+    font-weight: 300;
+}
