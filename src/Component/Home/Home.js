@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../Navbar/Navbar';
 import './Home.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import { Link } from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
@@ -36,6 +38,11 @@ import feature3 from '../Images/Syntella icon_allaround quality.svg';
 
 
 const Home = () => {
+
+    useEffect(()=>{
+        Aos.init({durations: 4000})
+    },[])
+
     return (
         <div>
             <Navbar></Navbar>
@@ -66,10 +73,10 @@ const Home = () => {
                 </div>
             </div>
             <div className="second-section" id="whoWeAre">
-                <div className="second-img">
+                <div  data-aos="flip-right" className="second-img">
                     <img src={secondImg} alt="" />
                 </div>
-                <div className="txt-2">
+                <div data-aos="flip-left" className="txt-2">
                     <h1>Who We are</h1>
                     <p>Technology has taken a quantum leap in the last few decades and it is entering the age of robotics, artificial intelligence and virtualization so that your business can get the maximum output with lower cost. Synctella is a technology startup for the data driven business environment of today and tomorrow. Our core competence lies in developing applications in Virtual and Augmented reality from mission critical solutions to game development. Synctella also provides Managed IT Service, Mobile and Web application development and cloud migration support. With an onshore presence of management and customer service and offshore presence of developers and partner companies our cardinal goal is to deliver our customers premium solutions that will cater to their needs, ready for the modern world of technology while keeping the cost to a minimum.
 </p>
@@ -103,7 +110,7 @@ const Home = () => {
 
             </div>
 
-            <div className="product" id="product">
+            <div data-aos="zoom-in-right"  className="product" id="product">
                 <div className="txt-3">
                     <h1>Products and Services </h1>
                     <h2>AR/VR Solutions </h2>
@@ -159,7 +166,7 @@ const Home = () => {
                 </div>
 
             </div>
-        <div className="partner" id="partner">
+            <div data-aos="fade-up" className="partner" id="partner">
             <h1>Partner Company</h1>
             <div className="company">            
                 <a href="http://www.alienide.com/wp-content/uploads/2017/04/ALiENIDE-Interactive-Logo-Top-Left.png" target="_blank"><img src={partner1} alt=""/></a>
@@ -169,7 +176,7 @@ const Home = () => {
             </div>
         </div>
        
-       <div className="client-profile">
+            <div className="client-profile">
            <h1>Client Profile</h1>
            <div className="client-details">
                <div className="client-info 1">
@@ -193,7 +200,7 @@ const Home = () => {
            </div>
        </div>
         
-        <div className="projects" id="projects">
+            <div data-aos="zoom-in-left" className="projects" id="projects">
          <div className="project-txt">
          <h1>Our Projects</h1>
          </div>
@@ -214,7 +221,7 @@ const Home = () => {
                 </p>
             </div> 
         </div>
-        <div className="footer" id="footer">
+            <div className="footer" id="footer">
             <div className="footer-txt">
                 <label>Contact Us</label> 
                 <p>
