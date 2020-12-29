@@ -16,6 +16,10 @@
 }
 .game-dev-img img{
     position: relative;
+<<<<<<< HEAD
+=======
+/*     height: 100%; */
+>>>>>>> 95c49f1d8fd1b319024f50c27bc7c1f1d3fc176a
     width: 100vw;
 }
 .game-dev-txt{
@@ -151,6 +155,7 @@
     height: 30px;
     margin-left: 20px;
 }
+<<<<<<< HEAD
 
 
 /* for mobile view */
@@ -466,3 +471,5 @@
 
 
 }
+=======
+>>>>>>> 95c49f1d8fd1b319024f50c27bc7c1f1d3fc176a
