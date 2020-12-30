@@ -1,12 +1,19 @@
 .company-profile{
     display:grid;
-    position: relative;
-    top: -8.35rem;
+    height: 100%;
+    width: 100vw;
 }
 .company-img img{
     position: relative;
-    height: 800px;
-    width: 99vw;
+    height: auto;
+    width: 100%;
+}
+.shed{
+    position: absolute;
+    height: 789px;
+    width: 100%;
+    background-color:#ffffff2d;
+    z-index: 1;
 }
 .profile{
     position: absolute;
@@ -16,6 +23,7 @@
     width: 900px;
     padding: 8rem;
     margin-left: 2.5rem;
+    z-index: 10;
     
 }
 .profile p{

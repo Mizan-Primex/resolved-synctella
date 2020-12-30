@@ -3,15 +3,13 @@
     display: flex;
 }
 .second-section img{
-    height:749px;
-    width: 750px;
+    height:auto;
+    width: 60vw;
 }
 .txt-2{
     font-family: Roboto;
     font-weight: 300;
     padding: 2rem;
-    position: relative;
-    top: 80px;
 }
 
 .txt-2 h1{

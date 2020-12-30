@@ -6,7 +6,7 @@
     display: grid;
 }
 .slide-1 img{  
-    Width :800px;
+    Width :100%;
     Height:500px;
 }
 .feature{

@@ -33,12 +33,6 @@ import CompanyProfile from '../Company-profile/CompanyProfile';
 import Product from '../Product/Product';
 
 
-
-
-
-
-
-
 const Home = () => {
 
     useEffect(()=>{
@@ -53,12 +47,13 @@ const Home = () => {
             <FirstSection></FirstSection>
             <SecondSection></SecondSection>      
             <CompanyProfile></CompanyProfile>      
-           <Product></Product>
+            <Product></Product>
 
             <div className="game-dev">
                 <div className="game-dev-img">
                     <img src={gameDev} alt="" />
                 </div>
+                <span className="game-dev-shed"></span>
                 <div className="game-dev-txt">
                     <h1>Game development</h1>
                     <p>
@@ -131,7 +126,7 @@ const Home = () => {
                </div>           
             </div>
         
-            <div data-aos="zoom-in-left" className="projects" id="projects">
+            <div data-aos="zoom-out-right" className="projects" id="projects">
                 <div className="project-txt">
                     <h1>Our Projects</h1>
                 </div>

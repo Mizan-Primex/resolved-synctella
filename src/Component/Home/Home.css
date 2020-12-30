@@ -11,15 +11,19 @@
 }
 .game-dev{
     display:grid;
-    position: relative;
-    top: -3.5rem;
+    height: 100%;
+    width: 100vw;
+    margin-top: 3rem;
+}
+.game-dev-shed{
+    position: absolute;
+    height: 513px;
+    width: 100%;
+    background-color:#ffffff2f;
+    z-index: 9;
 }
 .game-dev-img img{
-    position: relative;
-<<<<<<< HEAD
-=======
-/*     height: 100%; */
->>>>>>> 95c49f1d8fd1b319024f50c27bc7c1f1d3fc176a
+    height: 100%;
     width: 100vw;
 }
 .game-dev-txt{
@@ -27,25 +31,23 @@
     color: #fff;
    text-align: center;
    font-weight: 300;
-   padding: 10rem;
+   padding: 6rem;
+   z-index: 10;
+   margin-top: 3rem;
 }
 .graphicDesign{
     display: flex;
-    position: relative;
-    top: -4rem;
+    margin-top: 3rem;
 }
 .graphic-img img{
-    height:749px;
-    width: 750px;
+    height:100%;
+    width: 65vw;
 }
 .graphic-txt{
     font-family: Roboto;
     text-align: right;
     font-weight: 300;
     padding: 6rem;
-    position: relative;
-    top: 120px;
-
 }
 .graphic-txt h1 {
     padding-bottom: 2rem;
@@ -53,18 +55,16 @@
 }
 .managedIT{
     display: flex;
-    position: relative;
-    top: -11rem;
+    margin-top: 3rem;
 }
 .managedIt-img img{
-    height:749px;
-    width: 750px;
+    height:100%;
+    width: 65vw;
 }
 .managedIt-txt{
     font-family: Roboto;  
     font-weight: 300;
     padding: 5rem;
-    margin-top:3rem;
 }
 .managedIt-txt ul{
     list-style: none;
@@ -77,11 +77,8 @@
     height: 300px;
     background-color: #F4F4F4;
     padding-top: 3rem;
-    position: relative;
-    top: -11rem;
-
+    margin-top: 3rem;
 }
-
 .company img{
   margin-right: 2rem;
     
@@ -90,8 +87,7 @@
     font-family: Roboto;  
     display: grid;
     justify-content: center;
-    position: relative;
-    top: -8rem;
+    padding-top: 3rem;
 }
 .client-profile h1{
     text-align: center;
@@ -115,8 +111,6 @@
     justify-content: center;
     background-color: #F4F4F4;
     padding: 5rem;
-    position: relative;
-    top: -8rem;
 }
 .project-details{
     margin-left: 3rem;
@@ -138,9 +132,7 @@
     font-family: Roboto;
     display: grid;
     justify-content: center;
-    margin-top: 40px;
-    position: relative;
-    top: -6rem;
+    padding: 3rem;
 }
 .footer-txt{
     text-align: center;
@@ -155,321 +147,13 @@
     height: 30px;
     margin-left: 20px;
 }
-<<<<<<< HEAD
 
 
 /* for mobile view */
 
 @media only screen and (max-width: 768px){
 
-    .first-section{
-        display: flex;
-        justify-content: space-between;
-    }
-    .slide-1{
-        display: grid;
-    }
-    .slide-1 img{  
-        Width :300px;
-        Height:300px;
-    }
-    .feature{
-        display: flex;
-        font-family: Roboto;
-        padding-top:0rem;    
-        justify-content: space-between;
-        height: 100px;
-        padding: 0rem;
-    }
-    .fea{
-        width: 40px;
-    }
-    .fea h2{
-        font-size: .6rem;
-    }
-    .feature p{
-       font-weight: 300;
-       font-size: .4rem;
-    }
-    
-    .feature1{
-        display: grid;
-        justify-content: center;
-    }
-    .feature1 img{
-    height: 10px;
-    width: 20px;
-    }
-    .feature2{
-        display: grid;
-        justify-content: center;
-    }
-    .feature2 img{
-        height: 10px;
-        width:10px;
-    }
-    .feature3{
-        display: grid;
-        justify-content: center;
-    }
-    .feature3 img{
-            height: 10px;
-            width:10px;
-    }
-    
-    .txt-1{
-        font-family: Roboto;
-        padding-top: 6rem;
-        padding-left: 2rem;
-        height:5rem;
-        width: 3rem;
-        font-size:.3rem; 
-    }
-    .txt-1 h1{
-        font-weight: 900;
-        font-size:.6rem; 
-    }
-
-
-
-    .second-section img{
-        height:200px;
-        width: 200px;
-    }
-    .txt-2{
-        font-family: Roboto;
-        font-weight: 300;
-        position: relative;
-        top: 0px;        
-    }    
-    .txt-2 h1{
-        font-weight: 700;
-        font-size:10px;      
-        margin-bottom: 0;
-    }
-    .txt-2 p{
-        font-size: .2rem;
-        font-weight: 300;
-    }
-    .company-profile{
-       
-        position: relative;
-        top: -19rem;
-    }
-    .company-img img{
-        position: relative;
-        height: 800px;
-        width: 99vw;
-    }
-    .profile{
-        position: absolute;
-        font-family: Roboto;
-        font-weight: 300;
-        color: #fff;
-        height: 300px;
-        width: 350px;
-        padding: 2rem;
-        font-size: .4rem;
-        margin-left: 0;
-        top: 16rem;
-        
-    }
-    .profile p{
-        font-weight: 300;
-    }
-    .profile ul{
-        list-style: none;
-        font-weight: 300;
-    }
-    .profile h1{
-        padding-bottom: 1rem;
-        font-weight: 300;
-        font-size: .6rem;
-    }
-    .profile h2{
-        font-weight: 300;
-        font-size: .5rem;
-    }
-    .product{
-        display: flex;
-        position: relative;
-        top: -37rem;
-    }
-    .third-img img{
-        height: 200px;
-        width: 200px;
-    }
-    .txt-3{
-        font-family: Roboto;
-        font-weight: 300;
-        position: relative;
-        top: 30px;
-        padding: 1rem;
-    }
-    .txt-3 h1{
-        font-size: .6rem;
-        padding-bottom: 0;
-    }
-    .txt-3 h2{
-        font-size: .4rem;
-        padding-bottom: 0;
-    }
-    .txt-3 p{
-        padding-left: 0;
-        font-weight: 300; 
-        font-size: .4rem;
-    }
-    .game-dev{
-        display:grid;
-        position: relative;
-        top: -37rem;
-    }
-    .game-dev-txt{
-        position: absolute;
-        color: #fff;
-       text-align: center;
-       font-weight: 300;
-       padding: 2rem;
-       font-size: .4rem;
-    }
-    .graphicDesign{
-        display: flex;
-        position: relative;
-        top: -37rem;
-    }
-    .graphic-img img{
-        height:200px;
-        width: 200px;
-    }
-    .graphic-txt{
-        font-family: Roboto;
-        text-align: right;
-        font-weight: 300;
-        padding: 2rem;
-        position: relative;
-        top: 25px;
-        font-size: .4rem;
-    
-    }
-    .graphic-txt h1 {
-        padding-bottom: 0;
-        font-size: .6rem;
-    
-    }
-    .managedIT{
-        display: flex;
-        position: relative;
-        top: -38rem;
-    }
-    .managedIt-img img{
-        height:200px;
-        width: 200px;
-    }
-    .managedIt-txt{
-        font-family: Roboto;  
-        font-weight: 200;
-        padding: 1rem;
-        margin-top:1rem;
-        font-size: .3rem;
-    }
-    .managedIt-txt h1{
-        font-size: .6rem;
-    }
-   
-    .partner{
-        display: grid;
-        justify-content: center;
-        text-align:center;
-        height: 80px;
-        background-color: #F4F4F4;
-        padding-top: 1rem;
-        position: relative;
-        top: -38rem;    
-    }  
-    .partner h1{
-        font-size: .6rem; 
-    }  
-    .company img{
-      margin-right: 0rem;
-      height: 25px;
-      width: 40px;        
-    }
-    .client-profile{
-        font-family: Roboto;  
-        display: grid;
-        justify-content: center;
-        position: relative;
-        top: -36rem;
-    }
-    .client-profile h1{
-        text-align: center;
-        font-size: .6rem; 
-    }
-    .client-details{
-        display: flex; 
-    }
-    .client-details p{
-        font-weight: 300;
-        font-size: .3rem; 
-    }
-    .client-info img{
-        height: 30px;   
-    }
-    .client-info{  
-        width: 80px;
-        padding: 1rem;
-    }
-    .projects{
-        font-family: Roboto;
-        display: flex;
-        justify-content: center;
-        background-color: #F4F4F4;
-        padding: 1rem;
-        position: relative;
-        top: -35rem;
-    }
-    .project-details{
-        margin-left: 0rem;
-        width: 100px;
-        padding: 0;
-    }
-    .project-details label{
-     font-size: .6rem;
-    }
-    .project-details p{
-        font-weight: 300;
-        font-size: .3rem;
-    }
-    .project-txt h1{
-        font-size: 60px;
-        padding-left: 4rem;        
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-    }
-    .footer{
-        font-family: Roboto;
-        display: grid;
-        justify-content: center;
-        margin-top: 0px;
-        position: relative;
-        top: -33rem;
-    }
-    .footer-txt{
-        text-align: center;
-        font-size: .3rem;
-    }
-    .footer-txt label{
-       font-size: .6rem;
-    }
-    .footer-link{
-        justify-self: center;
-    }
-    .footer-link  img{
-        height: 10px;
-        margin-left: 10px;
-    }
 
 
 }
-=======
->>>>>>> 95c49f1d8fd1b319024f50c27bc7c1f1d3fc176a
+
