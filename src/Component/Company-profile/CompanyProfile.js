@@ -9,7 +9,7 @@ const CompanyProfile = () => {
                 <div className="company-img">
                     <img src={companyprofile} alt="" srcset="" />
                 </div>
-                <span className="shed"></span>
+                {/* <span className="shed"></span> */}
                 <div className="profile">
                     <h1>Company Profile</h1>
                     <h2>Vision</h2>

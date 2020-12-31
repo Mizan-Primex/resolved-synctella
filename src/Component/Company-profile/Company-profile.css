@@ -7,13 +7,7 @@
     position: relative;
     height: auto;
     width: 100%;
-}
-.shed{
-    position: absolute;
-    height: 789px;
-    width: 100%;
-    background-color:#ffffff2d;
-    z-index: 1;
+    opacity: .9;
 }
 .profile{
     position: absolute;
@@ -27,11 +21,17 @@
     
 }
 .profile p{
+    font-size: 110%;
     font-weight: 300;
 }
 .profile ul{
     list-style: none;
 }
 .profile h1{
+    font-size: 250%;
     padding-bottom: 1.5rem;
+}
+.profile h2{
+    font-size: 215%;
+  
 }

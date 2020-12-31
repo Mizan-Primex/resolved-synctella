@@ -12,8 +12,10 @@ const SecondSection = () => {
 
     return (
         <div>
+            
+            
             <div className="second-section" id="whoWeAre">
-                <div data-aos="flip-right" className="second-img">
+                <div data-aos="flip-right"  className="second-img">
                     <img src={secondImg} alt="" />
                 </div>
                 <div data-aos="flip-left" className="txt-2">

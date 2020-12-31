@@ -1,26 +1,31 @@
 .first-section{
+    /* display: flex;
+    justify-content: space-between; */
+    margin-top:150px;
+    margin-bottom: 3rem;
+}
+.a{
     display: flex;
     justify-content: space-between;
 }
-.slide-1{
-    display: grid;
-}
-.slide-1 img{  
-    Width :100%;
-    Height:500px;
+.first{
+    height: 100%;
+    width: 60vw;
 }
 .feature{
     display: flex;
     font-family: Roboto;
     padding-top:2rem;    
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 200px;
-    padding: 2rem;
+    padding: 2rem;    
 }
 .fea{
     width: 250px;
+    margin-left: 5rem;
 }
 .feature p{
+    font-size: 110%;
    font-weight: 300;
 }
 
@@ -51,12 +56,14 @@ width:40px;
 
 .txt-1{
     font-family: Roboto;
-    padding-top: 6rem;
-    padding-left: 10rem;
+    padding-left: 4rem;
     height:20rem;
-    width: 13rem;
+    width: 30vw;
+    align-self: center;
+    font-size:110%;
 }
 .txt-1 h1{
     font-weight: 900;
-    font-size:30px; 
+    font-size:220%;
+    padding-bottom: 2rem; 
 }

@@ -1,24 +1,30 @@
 .navbarBody{
+    position: fixed;
+    z-index: 20;
+    top: 0;
     display: flex;
     font-family: Roboto;
     justify-content: space-between; 
-    background-color: #f4f4f473; 
+    background-color: #fff; 
+    height: 100px;
+    width: 100%;
+
 }
 .links a{
     text-decoration: none ! important;
-    margin-right: 1.5rem;
-    font-size: .95rem;
+    margin-right: .5rem;
+    font-size: 100%;
     color: #000;
-    font-weight: 500;
-   
+    font-weight: 500;  
     
 }
 .links{
     padding: 3rem;
-
 }
 .logo img {
     margin-left: 50px;
-     height: 60px;
-     padding: 2rem;
+     height: 80px;
+     width: 300px;
+     padding: 1rem;
+     padding-top: 20px;
  }

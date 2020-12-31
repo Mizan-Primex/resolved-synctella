@@ -1,26 +1,9 @@
-.navbar{
-    position: fixed;
-    height: 80px;
-    width: 100vw;
-    z-index: 20;
-    top: 0;
-}
-.home{
-    position: absolute;
-    top: 8.5rem;
-}
 .game-dev{
     display:grid;
     height: 100%;
     width: 100vw;
     margin-top: 3rem;
-}
-.game-dev-shed{
-    position: absolute;
-    height: 513px;
-    width: 100%;
-    background-color:#ffffff2f;
-    z-index: 9;
+    opacity: .9;
 }
 .game-dev-img img{
     height: 100%;
@@ -30,10 +13,14 @@
     position: absolute;
     color: #fff;
    text-align: center;
+   font-size: 110%;
    font-weight: 300;
    padding: 6rem;
    z-index: 10;
    margin-top: 3rem;
+}
+.game-dev-txt h1{
+    font-size: 250%; 
 }
 .graphicDesign{
     display: flex;
@@ -46,16 +33,19 @@
 .graphic-txt{
     font-family: Roboto;
     text-align: right;
+    font-size: 110%;
     font-weight: 300;
     padding: 6rem;
 }
 .graphic-txt h1 {
+    font-size: 250%;
     padding-bottom: 2rem;
 
 }
 .managedIT{
     display: flex;
     margin-top: 3rem;
+
 }
 .managedIt-img img{
     height:100%;
@@ -63,10 +53,12 @@
 }
 .managedIt-txt{
     font-family: Roboto;  
+    font-size: 110%;
     font-weight: 300;
     padding: 5rem;
 }
 .managedIt-txt ul{
+    font-size: 120%;
     list-style: none;
     font-weight: 500;
 }
@@ -75,9 +67,13 @@
     justify-content: center;
     text-align:center;
     height: 300px;
+    width: auto;
     background-color: #F4F4F4;
     padding-top: 3rem;
     margin-top: 3rem;
+}
+.partner h1{
+    font-size: 250%;
 }
 .company img{
   margin-right: 2rem;
@@ -90,20 +86,28 @@
     padding-top: 3rem;
 }
 .client-profile h1{
+    font-size: 250%;
     text-align: center;
 }
 .client-details{
     display: flex; 
 }
 .client-details p{
+    padding-top: 20px;
+    height: auto;
+    width: 200px;
+    font-size: 110%;
     font-weight: 300;
+   
 }
 .client-info img{
     height: 80px;   
 }
 .client-info{  
+    height: auto;
     width: 200px;
     padding: 5rem;
+    margin-right: 5rem;
 }
 .projects{
     font-family: Roboto;
@@ -114,17 +118,20 @@
 }
 .project-details{
     margin-left: 3rem;
-    width: 700px;
-    padding: 2rem;
+    height: 100%;
+    width: 600px;
+    padding: 1rem;
 }
 .project-details label{
+    font-size: 215%;
  font-size: 30px;
 }
 .project-details p{
+    font-size: 110%;
     font-weight: 300;
 }
 .project-txt h1{
-    font-size: 90px;
+    font-size: 700%;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
 }
@@ -135,10 +142,11 @@
     padding: 3rem;
 }
 .footer-txt{
+    font-size: 110%;
     text-align: center;
 }
 .footer-txt label{
-   font-size: 2rem;
+   font-size: 215%;
 }
 .footer-link{
     justify-self: center;

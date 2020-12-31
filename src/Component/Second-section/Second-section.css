@@ -1,6 +1,7 @@
 
 .second-section{
     display: flex;
+    top: 100px;
 }
 .second-section img{
     height:auto;
@@ -14,11 +15,11 @@
 
 .txt-2 h1{
     font-weight: 700;
-    font-size:40px; 
+    font-size:200%; 
     margin-bottom: 3rem;
     
 }
 .txt-2 p{
-    font-size: 1rem;
+    font-size: 110%;
     font-weight: 300;
 }

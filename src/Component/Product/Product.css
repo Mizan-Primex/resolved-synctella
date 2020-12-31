@@ -13,9 +13,14 @@
     padding: 6rem;
 }
 .txt-3 h1{
+    font-size: 250%;
     padding-bottom: 1rem;
 }
+.txt-3 h1{
+    font-size: 215%;
+}
 .txt-3 p{
+    font-size: 110%;
     padding-left: 2rem;
     font-weight: 300;
 }
