@@ -1,4 +1,200 @@
-.game-dev{
+ .mainBody::after,
+ .mainBody::before{
+     
+     content:"";
+     display: block;
+     clear: both;
+ }
+ .mainBody{
+    overflow: hidden;
+ }
+
+ .navbarBody{
+    position: fixed;
+    top:0;
+    z-index: 20;
+    display: flex;
+    font-family: Roboto;
+    justify-content: space-between; 
+    background-color: #fff; 
+    height: auto;
+    width: 100vw;
+}
+.links a{
+    text-decoration: none ! important;
+    margin-right: .5rem;
+    font-size: 100%;
+    color: #000;
+    font-weight: 500;  
+    
+}
+.links{
+    padding: 3rem;
+    display: block;
+}
+.logo img {
+    margin-left: 50px;
+     height: 100px;
+     width: 300px;
+     padding: 1rem;
+     padding-top: 20px;
+ }
+
+.first-section{
+    margin-top:150px;
+    margin-bottom: 2rem;
+}
+.a{
+    display: flex;
+    justify-content: space-between;
+}
+.first{
+    height: 100%;
+    width: 60vw;
+}
+.feature{
+    display: flex;
+    font-family: Roboto;
+    padding-top:2rem;    
+    justify-content: flex-end;
+    height: 200px;
+    padding: 2rem;    
+}
+.fea{
+    width: 250px;
+    margin-left: 5rem;
+}
+.feature p{
+    font-size: 110%;
+   font-weight: 300;
+}
+
+.feature1{
+    display: grid;
+    justify-content: center;
+}
+.feature1 img{
+height: 40px;
+width:40px;
+}
+.feature2{
+    display: grid;
+    justify-content: center;
+}
+.feature2 img{
+    height: 40px;
+    width:40px;
+}
+.feature3{
+    display: grid;
+    justify-content: center;
+}
+.feature3 img{
+        height: 40px;
+        width:40px;
+}
+
+.txt-1{
+    font-family: Roboto;
+    padding-left: 4rem;
+    height:20rem;
+    width: 30vw;
+    align-self: center;
+    font-size:110%;
+}
+.txt-1 h1{
+    font-weight: 900;
+    font-size:220%;
+    padding-bottom: 2rem; 
+}
+.second-section{
+    display: flex;
+}
+.second-section img{
+    height:auto;
+    width: 60vw;
+}
+.txt-2{
+    font-family: Roboto;
+    font-weight: 300;
+    padding: 2rem;
+}
+
+.txt-2 h1{
+    font-weight: 700;
+    font-size:200%; 
+    margin-bottom: 3rem;
+    
+}
+.txt-2 p{
+    font-size: 110%;
+    font-weight: 300;
+}
+.company-profile{
+    display:grid;
+    height: 100%;
+    width: 100vw;
+}
+.company-img img{
+    height: auto;
+    width: 100%;
+    opacity: .9;
+}
+.profile{
+    position: absolute;
+    font-family: Roboto;
+    color: #fff;
+    height: 500px;
+    width: 900px;
+    padding: 8rem;
+    margin-left: 2.5rem;
+    z-index: 10;
+    
+}
+.profile p{
+    font-size: 110%;
+    font-weight: 300;
+}
+.profile ul{
+    list-style: none;
+}
+.profile h1{
+    font-size: 250%;
+    padding-bottom: 1.5rem;
+}
+.profile h2{
+    font-size: 215%;
+  
+}
+.product{
+    display: flex;
+    height: 100%;
+    width: 100vw;
+    position: relative;
+
+}
+.third-img img{
+    height: auto;
+    width: 60vw;
+}
+.txt-3{
+    font-family: Roboto;
+    font-weight: 300;
+    padding: 6rem;
+}
+.txt-3 h1{
+    font-size: 250%;
+    padding-bottom: 1rem;
+}
+.txt-3 h1{
+    font-size: 215%;
+}
+.txt-3 p{
+    font-size: 110%;
+    padding-left: 2rem;
+    font-weight: 300;
+}
+ .game-dev{
     display:grid;
     height: 100%;
     width: 100vw;
@@ -6,7 +202,6 @@
     opacity: .9;
 }
 .game-dev-img img{
-    height: 100%;
     width: 100vw;
 }
 .game-dev-txt{
@@ -20,8 +215,9 @@
    margin-top: 3rem;
 }
 .game-dev-txt h1{
-    font-size: 250%; 
+    font-size: 250%;  
 }
+
 .graphicDesign{
     display: flex;
     margin-top: 3rem;
@@ -42,6 +238,7 @@
     padding-bottom: 2rem;
 
 }
+
 .managedIT{
     display: flex;
     margin-top: 3rem;
@@ -157,11 +354,304 @@
 }
 
 
-/* for mobile view */
 
-@media only screen and (max-width: 768px){
+/* mobile view*/
+@media only screen and (max-width: 768px) {
 
+.links{
+    display: grid;
+    padding: 15%;
+    font-size: 50%;
+}
+.logo img {
+    margin-left: 50px;
+     height: 100%;
+     width: 60%;
+     padding: 0rem;
+     padding-top: 0;
+ }
+ .mainBody{
+     display: grid;
+     
+ }
+ 
+.first-section{
+    margin-top:500px;
+    margin-bottom: 2rem;
+}
+.a{
+    display: grid;
+    /* justify-content: space-between; */
+}
+.first{
+    height: 100%;
+    width: 100vw;
+}
+.feature{
+    display:grid;
+    font-family: Roboto;
+    padding-top:2rem;    
+    justify-content: center;
+    height: 500px;
+    padding: 2rem;  
+}
+.fea{
+    width: 100vw;
+    margin-left: 0rem;
+}
+.feature p{
+    font-size: 110%;
+   font-weight: 300;
+}
 
+.feature1{
+    display: grid;
+    justify-content: center;
+}
+.feature1 img{
+height: 40px;
+width:40px;
+}
+.feature2{
+    display: grid;
+    justify-content: center;
+}
+.feature2 img{
+    height: 40px;
+    width:40px;
+}
+.feature3{
+    display: grid;
+    justify-content: center;
+}
+.feature3 img{
+        height: 40px;
+        width:40px;
+}
+
+.txt-1{
+    font-family: Roboto;
+    padding-left: 4rem;
+    height:20rem;
+    width: 80vw;
+    align-self: center;
+    font-size:50%;
+}
+.txt-1 h1{
+    font-weight: 900;
+    font-size:200%;
+    padding-bottom: 0rem; 
+}
+.second-section{
+    display: grid;
+}
+.second-section img{
+    height:auto;
+    width: 100vw;
+}
+.company-profile{
+    display:grid;
+    height: 100%;
+    width: 100vw;
+}
+.company-img img{
+    height: auto;
+    width: 100%;
+    opacity: .9;
+}
+.profile{
+    position: relative;
+    font-family: Roboto;
+    color: #000;
+    height: auto;
+    width: 100vw;
+    padding: 1rem;
+    margin-left: 0rem;
+    z-index: 10;
+    
+}
+
+.product{
+    display: grid;
+    height: 100%;
+    width: 100vw;
+    position: relative;
+
+}
+.third-img img{
+    height: auto;
+    width: 100vw;
+}
+ .game-dev{
+    display:grid;
+    height: 100%;
+    width: 100vw;
+    margin-top: 3rem;
+    opacity: .9;
+}
+.game-dev-img img{
+    width: 100vw;
+}
+.game-dev-txt{
+    position: relative;
+    color: #000;
+   text-align: justify;
+   font-size: 110%;
+   font-weight: 300;
+   padding: 02rem;
+   z-index: 10;
+   margin-top: 0rem;
+}
+.graphicDesign{
+    display: grid;
+    margin-top: 0rem;
+}
+.graphic-img img{
+    height:100%;
+    width: 100vw;
+}
+.graphic-txt{
+    font-family: Roboto;
+    text-align: left;
+    height: auto;
+    width:100vw;
+    font-size: 110%;
+    font-weight: 300;
+    padding: 2rem;
+}
+.graphic-txt h1 {
+    font-size: 250%;
+    padding-bottom: 0rem;
 
 }
 
+.managedIT{
+    display: grid;
+    margin-top: 0rem;
+
+}
+.managedIt-img img{
+    height:100%;
+    width: 100vw;
+}
+.managedIt-txt{
+    font-family: Roboto;  
+    font-size: 110%;
+    font-weight: 300;
+    padding: 2rem;
+    height:auto;
+    width: 100vw;
+}
+.partner{
+    display: grid;
+    justify-content: center;
+    text-align:center;
+    height: auto;
+    width: 100vw;
+    background-color: #F4F4F4;
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
+.partner h1{
+    
+    font-size: 250%;
+}
+.company img{
+    display: grid;
+    justify-content: center;
+    position: relative;
+    padding: 1rem;
+  margin-right: 0rem;
+    
+}
+.client-profile{
+    font-family: Roboto;  
+    display: grid; 
+  justify-content: center;
+  height: auto;
+  width: 100vw;
+    padding-top: 1rem;
+}
+.client-profile h1{
+    font-size: 250%;
+    text-align: center;
+}
+.client-details{
+    display: grid; 
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+}
+.client-details p{
+    padding-top: 10px;
+    height: auto;
+    width: auto;
+    font-size: 110%;
+    font-weight: 300;
+   
+}
+.client-info img{
+    height: 80px;  
+
+}
+.client-info{  
+    height: auto;
+    width: 100vw;
+    padding: 2rem;
+    margin-right: 0rem;
+}
+.projects{
+    font-family: Roboto;
+    display: grid;
+    justify-content: center;
+    background-color: #F4F4F4;
+    padding: 0rem;
+    height: auto;
+    width: 100vw;
+}
+.project-details{
+    margin-left: 0rem;
+    height: auto;
+    width: 100vw;
+    padding: 1rem;
+}
+.project-details label{
+    font-size: 215%;
+ font-size: 30px;
+}
+.project-details p{
+    font-size: 110%;
+    font-weight: 300;
+}
+.project-txt h1{
+    font-size: 220%;
+    writing-mode: unset;
+    transform: rotate(0deg);
+    text-align:center;
+    padding-top:1rem;
+}
+.footer{
+    font-family: Roboto;
+    display: grid;
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+    padding: 1rem;
+}
+.footer-txt{
+    font-size: 110%;
+    text-align: center;
+}
+.footer-txt label{
+   font-size: 215%;
+}
+.footer-link{
+    justify-self: center;
+}
+.footer-link  img{
+    height: 30px;
+    margin-left: 20px;
+}
+
+
+}
