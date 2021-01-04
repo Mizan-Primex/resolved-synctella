@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Navbar from '../Navbar/Navbar';
+
 import './Home.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -8,9 +8,8 @@ import 'aos/dist/aos.css';
 import { Carousel, Dropdown, DropdownButton } from 'react-bootstrap';
 
 //images
-import hamburg from '../Images/Hambarg.svg';
-import hamburg2 from '../Images/Hambarg2.svg';
-import logo from '../Images/loog.svg'
+
+import logo from '../Images/synctella-logo.png'
 import * as Scroll from 'react-scroll';
 import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
