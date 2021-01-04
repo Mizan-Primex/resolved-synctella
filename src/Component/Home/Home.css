@@ -225,7 +225,7 @@
     opacity: .9;
 }
 .game-dev-img img{
-    height: 500px;
+    height: auto;
     width: 100vw;
 }
 .game-dev-txt{
