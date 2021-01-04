@@ -27,6 +27,9 @@
     background-color: #fff ! important;
     border-color: #fff ! important; 
 }
+.btn{
+    padding:0rem ! important;
+}
 .links a{
     text-decoration: none ! important;
     margin-right: .6rem;
