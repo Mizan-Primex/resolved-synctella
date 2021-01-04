@@ -44,7 +44,7 @@
 .first-section{
     margin-top:150px;
     margin-bottom: 2rem;
-    height: 800px;
+    height: auto;
     /* width:100vw; */
 }
 .a{
@@ -59,16 +59,20 @@
     display: flex;
     font-family: Roboto;
     padding-top:2rem;    
-    justify-content: flex-end;
-    height: 200px;
-    padding: 2rem;    
+    justify-content: flex-start;
+    height: 200px;    
+    padding: 2rem; 
+    margin-left: 31rem;   
 }
 .fea{
-    width: 250px;
-    margin-left: 5rem;
+    width: 200px;
+    margin-left: 1rem;
+}
+.fea h2{
+    font-size: 80%;
 }
 .feature p{
-    font-size: 110%;
+    font-size: 70%;
    font-weight: 300;
 }
 
@@ -77,24 +81,24 @@
     justify-content: center;
 }
 .feature1 img{
-height: 40px;
-width:40px;
+    height: 20px;
+    width:20px;
 }
 .feature2{
     display: grid;
     justify-content: center;
 }
 .feature2 img{
-    height: 40px;
-    width:40px;
+    height: 20px;
+    width:20px;
 }
 .feature3{
     display: grid;
     justify-content: center;
 }
 .feature3 img{
-        height: 40px;
-        width:40px;
+        height: 20px;
+        width:20px;
 }
 
 .txt-1{
@@ -140,11 +144,12 @@ width:40px;
     display:grid;
     height: 100%;
     width: 100vw;
+    margin-top: 2rem;
 }
 .company-img img{
-    height: 500px;
+    height: auto;
     width: 100%;
-    opacity: .9;
+    opacity: .8;
 }
 .profile{
     position: absolute;

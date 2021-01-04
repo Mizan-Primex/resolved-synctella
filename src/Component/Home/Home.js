@@ -203,8 +203,6 @@ const Home = () => {
                             </div>
                         </Carousel.Item>
                     </Carousel>
-
-
                     <div className="feature">
                         <div className="feature1 fea">
                             <img src={feature1} alt="" />
@@ -261,8 +259,7 @@ const Home = () => {
                         </p>
                     </div>
             </section>
-            <section data-aos="zoom-in-right" className="product" id="product">
-              
+            <section data-aos="zoom-in-right" className="product" id="product">              
                     <div className="txt-3">
                         <h1>Products and Services </h1>
                         <h2>AR/VR Solutions </h2>
@@ -272,11 +269,9 @@ const Home = () => {
 
                     </div>
                     <div className="third-img">
-                        <img src={product} alt="" srcset="" />
-                    </div>
-              
+                        <img src={graphicImg} alt="" srcset="" />
+                    </div>              
             </section>
-
           <section className="game-dev">
              
                         <div className="game-dev-img">
@@ -294,7 +289,7 @@ const Home = () => {
             <section className="graphicDesign">
                   
                         <div className="graphic-img">
-                            <img src={graphicImg} alt="" />
+                            <img src={product} alt="" />
                         </div>
                         <div className="graphic-txt">
                             <h1>3D Graphics Design and Animation</h1>
