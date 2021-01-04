@@ -77,7 +77,7 @@ const Home = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={-120}
+                            offset={20}
                             duration={500}
                             delay={500}
                             isDynamic={true}
@@ -125,6 +125,19 @@ const Home = () => {
                                                     ignoreCancelEvents={false}
                                                 >3D Graphics Design and Animation</Link>
                         </Dropdown.Item>
+                        <Dropdown.Item >
+                        <Link activeClass="active"
+                                                    to="managedIT"
+                                                    spy={true}
+                                                    smooth={true}
+                                                    hashSpy={true}
+                                                    offset={-100}
+                                                    duration={500}
+                                                    delay={500}
+                                                    isDynamic={true}
+                                                    ignoreCancelEvents={false}
+                                                >Managed IT Service</Link>
+                        </Dropdown.Item>
                         </DropdownButton>
                         </a>
                     <a>
@@ -140,6 +153,18 @@ const Home = () => {
                             ignoreCancelEvents={false}
                         >Partner Company</Link>
                     </a>
+                    <a>
+                        <Link activeClass="active"
+                            to="client-profile"
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={-110}
+                            duration={500}
+                            delay={500}
+                            isDynamic={true}
+                            ignoreCancelEvents={false}
+                        >Client Profile</Link> </a>
                     <a>
                         <Link activeClass="active"
                             to="projects"
@@ -164,6 +189,7 @@ const Home = () => {
                             isDynamic={true}
                             ignoreCancelEvents={false}
                         >Contact Us</Link> </a>
+                        
                 </div>
                 
             </nav>
@@ -330,7 +356,7 @@ const Home = () => {
                             </p>
                         </div>
             </section>
-                    <section className="managedIT">
+                    <section className="managedIT" id="managedIT">
                    
                         <div className="managedIt-txt">
                         <h1>Managed IT Service</h1>
@@ -362,7 +388,7 @@ const Home = () => {
                   
                     </section>
                   
-                    <section className="client-profile">
+                    <section className="client-profile" id="client-profile">
                    
                         <h1>Client Profile</h1>
                         <div className="client-details">
