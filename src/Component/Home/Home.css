@@ -47,10 +47,10 @@
 }
 .logo img {
     margin-left: 50px;
-     height: 100px;
-     width: 300px;
+     height: auto;
+     width: 200px;
      padding: 0rem;
-     padding-top: 10px;
+     padding-top: 15px;
  }
 
 .first-section{
