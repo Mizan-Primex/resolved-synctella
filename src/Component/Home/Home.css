@@ -1,17 +1,17 @@
- .mainBody::after,
- .mainBody::before{
-     
-     content:"";
-     display: block;
-     clear: both;
- }
+
  .mainBody{
     overflow: hidden;
  }
-
+ /* .navbarBody::after,
+ .navbarBody::before{
+      
+      content:"";
+      display: block;
+      clear: both;
+  } */
  .navbarBody{
-    position: fixed;
-    top:0;
+     position: fixed;
+     top: 0;
     z-index: 20;
     display: flex;
     font-family: Roboto;
@@ -29,20 +29,23 @@
     
 }
 .links{
-    padding: 3rem;
+    margin-top: .6rem;
+    padding: 2rem;
     display: block;
 }
 .logo img {
     margin-left: 50px;
      height: 100px;
      width: 300px;
-     padding: 1rem;
+     padding: 0rem;
      padding-top: 20px;
  }
 
 .first-section{
     margin-top:150px;
     margin-bottom: 2rem;
+    height: 800px;
+    /* width:100vw; */
 }
 .a{
     display: flex;
@@ -109,15 +112,18 @@ width:40px;
 }
 .second-section{
     display: flex;
+    height:100%;
+    width: 100vw;
 }
 .second-section img{
-    height:auto;
+    height:500px;
     width: 60vw;
 }
 .txt-2{
     font-family: Roboto;
     font-weight: 300;
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .txt-2 h1{
@@ -127,7 +133,7 @@ width:40px;
     
 }
 .txt-2 p{
-    font-size: 110%;
+    font-size: 100%;
     font-weight: 300;
 }
 .company-profile{
@@ -136,7 +142,7 @@ width:40px;
     width: 100vw;
 }
 .company-img img{
-    height: auto;
+    height: 500px;
     width: 100%;
     opacity: .9;
 }
@@ -144,26 +150,26 @@ width:40px;
     position: absolute;
     font-family: Roboto;
     color: #fff;
-    height: 500px;
-    width: 900px;
-    padding: 8rem;
+    height: auto;
+    width: 70vw;
+    padding: 3rem;
     margin-left: 2.5rem;
     z-index: 10;
     
 }
 .profile p{
-    font-size: 110%;
+    font-size: 80%;
     font-weight: 300;
 }
 .profile ul{
     list-style: none;
 }
 .profile h1{
-    font-size: 250%;
+    font-size: 200%;
     padding-bottom: 1.5rem;
 }
 .profile h2{
-    font-size: 215%;
+    font-size: 150%;
   
 }
 .product{
@@ -174,13 +180,13 @@ width:40px;
 
 }
 .third-img img{
-    height: auto;
+    height: 500px;
     width: 60vw;
 }
 .txt-3{
     font-family: Roboto;
     font-weight: 300;
-    padding: 6rem;
+    padding: 3rem;
 }
 .txt-3 h1{
     font-size: 250%;
@@ -202,6 +208,7 @@ width:40px;
     opacity: .9;
 }
 .game-dev-img img{
+    height: 500px;
     width: 100vw;
 }
 .game-dev-txt{
@@ -220,10 +227,12 @@ width:40px;
 
 .graphicDesign{
     display: flex;
+    height:100%;
+    width: 100vw;
     margin-top: 3rem;
 }
 .graphic-img img{
-    height:100%;
+    height:500px;
     width: 65vw;
 }
 .graphic-txt{
@@ -231,7 +240,7 @@ width:40px;
     text-align: right;
     font-size: 110%;
     font-weight: 300;
-    padding: 6rem;
+    padding: 3rem;
 }
 .graphic-txt h1 {
     font-size: 250%;
@@ -241,21 +250,23 @@ width:40px;
 
 .managedIT{
     display: flex;
+    height:100%;
+    width: 100vw;
     margin-top: 3rem;
 
 }
 .managedIt-img img{
-    height:100%;
+    height:500px;
     width: 65vw;
 }
 .managedIt-txt{
     font-family: Roboto;  
-    font-size: 110%;
+    font-size: 100%;
     font-weight: 300;
-    padding: 5rem;
+    padding: 2rem;
 }
 .managedIt-txt ul{
-    font-size: 120%;
+    font-size: 100%;
     list-style: none;
     font-weight: 500;
 }
@@ -279,8 +290,10 @@ width:40px;
 .client-profile{
     font-family: Roboto;  
     display: grid;
+    height: 100%;
+    width: 100vw;
     justify-content: center;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 .client-profile h1{
     font-size: 250%;
@@ -303,15 +316,17 @@ width:40px;
 .client-info{  
     height: auto;
     width: 200px;
-    padding: 5rem;
+    padding: 3rem;
     margin-right: 5rem;
 }
 .projects{
     font-family: Roboto;
     display: flex;
+    height: 500px;
+    width: 100vw;
     justify-content: center;
     background-color: #F4F4F4;
-    padding: 5rem;
+    padding: 3rem;
 }
 .project-details{
     margin-left: 3rem;
@@ -320,15 +335,14 @@ width:40px;
     padding: 1rem;
 }
 .project-details label{
-    font-size: 215%;
- font-size: 30px;
+    font-size: 150%;
 }
 .project-details p{
-    font-size: 110%;
+    font-size: 80%;
     font-weight: 300;
 }
 .project-txt h1{
-    font-size: 700%;
+    font-size: 430%;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
 }

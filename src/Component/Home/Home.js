@@ -56,17 +56,18 @@ const Home = () => {
         <div className="mainBody">
             <nav className="navbarBody">
                 <div className="logo">
-                    <a href="/"><img className="logo" src={logo} alt="" srcset="" /></a>
+                <a href="/"><img className="logo" src={logo} alt="" srcset="" /></a>
                 </div>
                 <div className="links">
+               
                     <a href="#"> <Link activeClass="active"
                         to="whoWeAre"
                         spy={true}
                         smooth={true}
                         hashSpy={true}
-                        offset={50}
+                        offset={-120}
                         duration={500}
-                        delay={1000}
+                        delay={2000}
                         isDynamic={true}
                         ignoreCancelEvents={false}
                     >Who We are</Link></a>
@@ -76,7 +77,7 @@ const Home = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={50}
+                            offset={-150}
                             duration={500}
                             delay={1000}
                             isDynamic={true}
@@ -89,7 +90,7 @@ const Home = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={50}
+                            offset={-220}
                             duration={500}
                             delay={1000}
                             isDynamic={true}
@@ -102,7 +103,7 @@ const Home = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={50}
+                            offset={-220}
                             duration={500}
                             delay={1000}
                             isDynamic={true}
@@ -115,7 +116,7 @@ const Home = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={50}
+                            offset={-100}
                             duration={500}
                             delay={1000}
                             isDynamic={true}
@@ -127,7 +128,7 @@ const Home = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={50}
+                            offset={-250}
                             duration={500}
                             delay={1000}
                             isDynamic={true}
