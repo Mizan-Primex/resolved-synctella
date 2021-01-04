@@ -67,7 +67,7 @@ const Home = () => {
                         hashSpy={true}
                         offset={-120}
                         duration={500}
-                        delay={2000}
+                        delay={500}
                         isDynamic={true}
                         ignoreCancelEvents={false}
                     >Who We are</Link></a>
@@ -79,7 +79,7 @@ const Home = () => {
                             hashSpy={true}
                             offset={-120}
                             duration={500}
-                            delay={1000}
+                            delay={500}
                             isDynamic={true}
                             ignoreCancelEvents={false}
                         >Company profile</Link>
@@ -90,9 +90,9 @@ const Home = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={-220}
+                            offset={-200}
                             duration={500}
-                            delay={1000}
+                            delay={500}
                             isDynamic={true}
                             ignoreCancelEvents={false}
                         >Products and Services</Link> </a>
@@ -105,7 +105,7 @@ const Home = () => {
                             hashSpy={true}
                             offset={-220}
                             duration={500}
-                            delay={1000}
+                            delay={500}
                             isDynamic={true}
                             ignoreCancelEvents={false}
                         >Partner Company</Link>
@@ -118,7 +118,7 @@ const Home = () => {
                             hashSpy={true}
                             offset={-100}
                             duration={500}
-                            delay={1000}
+                            delay={500}
                             isDynamic={true}
                             ignoreCancelEvents={false}
                         >Our Projects</Link> </a>
@@ -130,7 +130,7 @@ const Home = () => {
                             hashSpy={true}
                             offset={-250}
                             duration={500}
-                            delay={1000}
+                            delay={500}
                             isDynamic={true}
                             ignoreCancelEvents={false}
                         >Contact Us</Link> </a>
