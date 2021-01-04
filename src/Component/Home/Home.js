@@ -5,7 +5,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 // import { Link } from 'react-router-dom';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Dropdown, DropdownButton } from 'react-bootstrap';
 
 //images
 import hamburg from '../Images/Hambarg.svg';
@@ -60,7 +60,7 @@ const Home = () => {
                 </div>
                 <div className="links">
                
-                    <a href="#"> <Link activeClass="active"
+                    <a> <Link activeClass="active"
                         to="whoWeAre"
                         spy={true}
                         smooth={true}
@@ -71,7 +71,7 @@ const Home = () => {
                         isDynamic={true}
                         ignoreCancelEvents={false}
                     >Who We are</Link></a>
-                    <a href="#">
+                    <a>
                         <Link activeClass="active"
                             to="company-profile"
                             spy={true}
@@ -83,21 +83,51 @@ const Home = () => {
                             isDynamic={true}
                             ignoreCancelEvents={false}
                         >Company profile</Link>
-                    </a>
-                    <a href="#">
+                    </a>                  
+                        <a id="nav-dropdown">
+                        <DropdownButton id="dropdown-basic-button" title="Products and Services">
+                        <Dropdown.Item >
                         <Link activeClass="active"
-                            to="product"
-                            spy={true}
-                            smooth={true}
-                            hashSpy={true}
-                            offset={-150}
-                            duration={500}
-                            delay={500}
-                            isDynamic={true}
-                            ignoreCancelEvents={false}
-                        >Products and Services</Link> </a>
-
-                    <a href="#">
+                                                    to="product"
+                                                    spy={true}
+                                                    smooth={true}
+                                                    hashSpy={true}
+                                                    offset={-160}
+                                                    duration={500}
+                                                    delay={500}
+                                                    isDynamic={true}
+                                                    ignoreCancelEvents={false}
+                                                >AR/VR Solutions</Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item >
+                        <Link activeClass="active"
+                                                    to="game-dev"
+                                                    spy={true}
+                                                    smooth={true}
+                                                    hashSpy={true}
+                                                    offset={-120}
+                                                    duration={500}
+                                                    delay={500}
+                                                    isDynamic={true}
+                                                    ignoreCancelEvents={false}
+                                                >Game development</Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item >
+                        <Link activeClass="active"
+                                                    to="graphicDesign"
+                                                    spy={true}
+                                                    smooth={true}
+                                                    hashSpy={true}
+                                                    offset={-100}
+                                                    duration={500}
+                                                    delay={500}
+                                                    isDynamic={true}
+                                                    ignoreCancelEvents={false}
+                                                >3D Graphics Design and Animation</Link>
+                        </Dropdown.Item>
+                        </DropdownButton>
+                        </a>
+                    <a>
                         <Link activeClass="active"
                             to="partner"
                             spy={true}
@@ -110,7 +140,7 @@ const Home = () => {
                             ignoreCancelEvents={false}
                         >Partner Company</Link>
                     </a>
-                    <a href="#">
+                    <a>
                         <Link activeClass="active"
                             to="projects"
                             spy={true}
@@ -122,7 +152,7 @@ const Home = () => {
                             isDynamic={true}
                             ignoreCancelEvents={false}
                         >Our Projects</Link> </a>
-                    <a href="#">
+                    <a>
                         <Link activeClass="active"
                             to="footer"
                             spy={true}
@@ -237,7 +267,8 @@ const Home = () => {
                
                     <div className="company-img">
                         <img src={companyprofile} alt="" srcset="" />
-                    </div>
+                        <span className="layer" ></span>                   
+                         </div>
                     <div className="profile">
                         <h1>Company Profile</h1>
                         <h2>Vision</h2>
@@ -264,7 +295,7 @@ const Home = () => {
                         <h1>Products and Services </h1>
                         <h2>AR/VR Solutions </h2>
                         <p>AR/VR presents a whole new world of possibilities for modern businesses. All enterprises share a common goal of getting clients and customers to use their services and their products.
-                        To achieve this, businesses must educate users about their products, engage meaningfully with potential clients and create lasting connections for future commerce. There are ways in which AR is already being implemented to further these goals and even more ways in which it has yet to be used.
+                To achieve this, businesses must educate users about their products, engage meaningfully with potential clients and create lasting connections for future commerce. There are ways in which AR is already being implemented to further these goals and even more ways in which it has yet to be used.
                         </p>
 
                     </div>
@@ -272,7 +303,7 @@ const Home = () => {
                         <img src={graphicImg} alt="" srcset="" />
                     </div>              
             </section>
-          <section className="game-dev">
+          <section className="game-dev" id="game-dev">
              
                         <div className="game-dev-img">
                             <img src={gameDev} alt="" />
@@ -280,13 +311,13 @@ const Home = () => {
                         <div className="game-dev-txt">
                             <h1>Game development</h1>
                             <p>
-                                We build AR/VR games for Android, iOS as well as for Windows phones. This is to take you to the world of new experience and welcome you to a whole new immersive environment. We work with a talented team of artists, designers and developers who have years of experience designing and developing cutting edge graphics and creative story lines.
+                    We build AR/VR games for Android, iOS as well as for Windows phones. This is to take you to the world of new experience and welcome you to a whole new immersive environment. We work with a talented team of artists, designers and developers who have years of experience designing and developing cutting edge graphics and creative story lines.
 
                             </p>
                         </div>
           </section>
                     
-            <section className="graphicDesign">
+            <section className="graphicDesign" id="graphicDesign">
                   
                         <div className="graphic-img">
                             <img src={product} alt="" />
@@ -294,8 +325,8 @@ const Home = () => {
                         <div className="graphic-txt">
                             <h1>3D Graphics Design and Animation</h1>
                             <p>
-                                The ability to see life like characters and objects in 3 dimensions has become very sophisticated over the years. We have a team of artists and lab dedicated to bring your imagination to life in 3D. Whether you want your 3D personality or objects to be augmented in real life or you want it in a fully immersive environment we can make it happen for you.
-                                
+                    The ability to see life like characters and objects in 3 dimensions has become very sophisticated over the years. We have a team of artists and lab dedicated to bring your imagination to life in 3D. Whether you want your 3D personality or objects to be augmented in real life or you want it in a fully immersive environment we can make it happen for you.
+                     
                             </p>
                         </div>
             </section>
@@ -323,10 +354,10 @@ const Home = () => {
                   
                         <h1>Partner Company</h1>
                         <div className="company">            
-                            <a href="http://www.alienide.com/wp-content/uploads/2017/04/ALiENIDE-Interactive-Logo-Top-Left.png" target="_blank"><img src={partner1} alt=""/></a>
-                            <a href="http://www.dreamerzlab.com/" target="_blank"> <img src={partner2} alt=""/></a>
-                            <a href="https://inneed.cloud/" target="_blank"><img src={partner3} alt=""/></a>
-                            <a href="http://stargroup-bd.com" target="_blank"><img src={partner4} alt=""/></a>
+                            <a  href="http://www.alienide.com/wp-content/uploads/2017/04/ALiENIDE-Interactive-Logo-Top-Left.png" target="_blank"><img className="company1" src={partner1} alt=""/></a>
+                            <a  href="http://www.dreamerzlab.com/" target="_blank"> <img className="company2" src={partner2} alt=""/></a>
+                            <a  href="https://inneed.cloud/" target="_blank"><img className="company3" src={partner3} alt=""/></a>
+                            <a  href="http://stargroup-bd.com" target="_blank"><img className="company4" src={partner4} alt=""/></a>
                         </div>
                   
                     </section>
@@ -366,16 +397,16 @@ const Home = () => {
                         <div className="project-details">
                             <label>Global Expansion:</label>
                             <p>
-                            Oftentimes our clients have everything they need to succeed, they just require the resources and support to make a strategic jump. We worked on this project for several months and the end result was truly spectacular. By ensuring consistent and transparent communication, our client was able to progress by leaps and bounds.
+                    Oftentimes our clients have everything they need to succeed, they just require the resources and support to make a strategic jump. We worked on this project for several months and the end result was truly spectacular. By ensuring consistent and transparent communication, our client was able to progress by leaps and bounds.
                             </p>
                             <label>Corporate Identity Campaign:</label>
                             <p>
-                            We approached this project carefully, as it was our very first undertaking of this scale. We studied our client’s business to create a focused and effective solution - and then watched it grow. We loved working with this client, and look forward to collaborating together on many more successful projects in the future.
+                    We approached this project carefully, as it was our very first undertaking of this scale. We studied our client’s business to create a focused and effective solution - and then watched it grow. We loved working with this client, and look forward to collaborating together on many more successful projects in the future.
 
                             </p>
                             <label>Brand Redesign:</label>
                             <p>
-                            Clients often approach Synctella with a general idea of what they need, and this project was no different. We were able to jump right in with our expertise and really helped the company grow and evolve. Today, their business is doing exceptionally well, and we’re proud to have been part of the process.
+                    Clients often approach Synctella with a general idea of what they need, and this project was no different. We were able to jump right in with our expertise and really helped the company grow and evolve. Today, their business is doing exceptionally well, and we’re proud to have been part of the process.
 
                             </p>
                         </div> 
@@ -386,7 +417,7 @@ const Home = () => {
                         <div className="footer-txt">
                             <label>Contact Us</label> 
                             <p>
-                            Address: 3413 Lorenzo Dr, Plano, TX 75074 <br/>
+                    Address: 3413 Lorenzo Dr, Plano, TX 75074 <br/>
                             Email: contact@synctella.com <br/>
                             Phone: +1-496-929-5958, +1-510-299-5458
                             </p>
@@ -410,7 +441,7 @@ const Home = () => {
                     
          
 
-        </div>
+        </div >
 
     );
 };
