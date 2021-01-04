@@ -90,7 +90,7 @@ const Home = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={-200}
+                            offset={-150}
                             duration={500}
                             delay={500}
                             isDynamic={true}
