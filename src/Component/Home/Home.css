@@ -38,8 +38,7 @@
     color: #000;
     font-weight: 500; 
     cursor: pointer; 
-    background-color: #fff;  
-    
+    background-color: #fff;    
 }
 .links a:hover{
     zoom: 1.05;
@@ -207,6 +206,9 @@
     height: auto;
     width: 60vw;
 }
+.third-img1{
+    display: none;
+}
 .txt-3{
     margin-top: 3rem;
     font-family: Roboto;
@@ -283,7 +285,11 @@
 .managedIt-img img{
     height:auto;
     width: 65vw;
+    display: block;
 }
+.managedIt-img1{
+    display: none;
+    }
 .managedIt-txt{
     font-family: Roboto;  
     font-size: 100%;
@@ -327,13 +333,26 @@
     width: 100vw;
     justify-content: center;
     padding-top: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.client-link a{
+    text-decoration: none ! important;
+    color: #000 !important;
+    margin-right: 2rem;
+    padding-top: 3rem;
+    font-weight: 500;
+    text-align: center;
 }
 .client-profile h1{
     font-size: 250%;
     text-align: center;
+    margin-bottom: 2rem;
+   
 }
 .client-details{
     display: flex; 
+    justify-content:center;
 }
 .client-details p{
     padding-top: 20px;
@@ -351,6 +370,19 @@
     width: 200px;
     padding: 3rem;
     margin-right: 5rem;
+}
+.clientImage{
+    margin-left: 1rem;
+}
+.clientImage img{
+height: auto;
+width: 12%;
+margin-right: 2rem;
+}
+
+#clientImage5{
+    height: auto;
+    width: 5%;
 }
 .projects{
     font-family: Roboto;
@@ -399,36 +431,115 @@
     height: 30px;
     margin-left: 20px;
 }
-
+.hamburger{
+    display: none;
+}
 
 
 /* mobile view*/
 @media only screen and (max-width: 768px) {
+    .logo img {
+        margin-left: 50px;
+         height: auto;
+         width: 100px;
+         padding: 0rem;
+         padding-top: 15px;
+     }
+    .hamburger{
+        display: block;
+        /* position: absolute;  
+        float: right; */
+    }
+    .menu1{
+        position: relative; 
+        top: .5rem;
+        right: -60%;
+        z-index: 100;
+    }
+    .menu2{
+        display: none;       
+
+    }
+    .h {
+        display: grid;
+        justify-content: right;
+        text-align: right;
+        height: 400px;
+        width:40vw;
+        position: relative;
+        font-size: 80%;
+        padding-top: 1rem;
+        margin-top: 2rem; 
+        padding-right: 1.2rem; 
+        background-color: #f2f2f2 ;
+        z-index: 99;
+    }
+    
+    .backdrop{
+        display: none;
+        background-color: #2d80973b;
+        height: 100vh;
+        width: 100vw;
+        cursor: pointer;
+        z-index: 98;
+        position: absolute;
+        
+    }
+    #Ham{
+       margin-top: 2rem;
+       margin-bottom: 1rem;
+        height: 15%;
+        width: 15%
+    }
+    .menu2 a{
+        text-decoration: none ! important;
+        margin-right: 0rem;
+        font-size: 90%;
+        color: #000;
+        font-weight: 500; 
+        cursor: pointer; 
+        background-color: none;    
+    }
+    .btn-primary {
+        font-weight: 500 ! important;  
+        font-family: Roboto ! important;
+        color: #000 ! important;
+        background-color: #f2f2f2 ! important;
+        border-color: #f2f2f2 ! important; 
+    }
+    .btn{
+        padding:0rem ! important;
+        font-size: 95% ! important;
+    }
+    #nav-dropdown a{
+        background-color: #f2f2f2 ! important;
+        border-color: #f2f2f2 ! important; 
+    }
 
 .links{
-    display: grid;
-    padding: 15%;
+    display: none;
+    padding: 0;
     font-size: 50%;
 }
 .logo img {
-    margin-left: 50px;
-     height: 100%;
-     width: 60%;
+    margin-left: 30px;
+     height: auto;
+     width: 75%;
      padding: 0rem;
-     padding-top: 0;
+     padding-top: 1rem;
  }
  .mainBody{
      display: grid;
+     justify-content: left;
      
  }
  
 .first-section{
-    margin-top:500px;
+    margin-top:120px;
     margin-bottom: 2rem;
 }
 .a{
     display: grid;
-    /* justify-content: space-between; */
 }
 .first{
     height: 100%;
@@ -438,42 +549,44 @@
     display:grid;
     font-family: Roboto;
     padding-top:2rem;    
-    justify-content: center;
-    height: 500px;
-    padding: 2rem;  
+    justify-content: left;
+    height: auto;
+    padding: 1rem;  
+    margin-right: 0rem;
 }
 .fea{
-    width: 100vw;
-    margin-left: 0rem;
+    height: auto;
+    width: 50vw;
 }
 .feature p{
-    font-size: 110%;
+    font-size: 90%;
    font-weight: 300;
 }
 
 .feature1{
     display: grid;
     justify-content: center;
+    
 }
 .feature1 img{
-height: 40px;
-width:40px;
+    height: 30px;
+    width:30px;
 }
 .feature2{
     display: grid;
     justify-content: center;
 }
 .feature2 img{
-    height: 40px;
-    width:40px;
+    height: 30px;
+    width:30px;
 }
 .feature3{
     display: grid;
     justify-content: center;
 }
 .feature3 img{
-        height: 40px;
-        width:40px;
+        height: 30px;
+        width:30px;
 }
 
 .txt-1{
@@ -482,11 +595,11 @@ width:40px;
     height:20rem;
     width: 80vw;
     align-self: center;
-    font-size:50%;
+    /* font-size:50%; */
 }
 .txt-1 h1{
     font-weight: 900;
-    font-size:200%;
+    /* font-size:100%; */
     padding-bottom: 0rem; 
 }
 .second-section{
@@ -496,12 +609,17 @@ width:40px;
     height:auto;
     width: 100vw;
 }
+.txt-2 {   
+    padding-left: 1rem;
+   
+}
 .company-profile{
     display:grid;
     height: 100%;
     width: 100vw;
 }
 .company-img img{
+    
     height: auto;
     width: 100%;
     opacity: .9;
@@ -528,6 +646,18 @@ width:40px;
 .third-img img{
     height: auto;
     width: 100vw;
+    display: none;
+    
+}
+.third-img1{
+    height: auto;
+    width: 100vw;
+    margin-bottom: 2rem;
+    display: block;
+}
+.txt-3 {
+    
+    padding: 1rem;
 }
  .game-dev{
     display:grid;
@@ -545,7 +675,7 @@ width:40px;
    text-align: justify;
    font-size: 110%;
    font-weight: 300;
-   padding: 02rem;
+   padding: 1rem;
    z-index: 10;
    margin-top: 0rem;
 }
@@ -564,7 +694,7 @@ width:40px;
     width:100vw;
     font-size: 110%;
     font-weight: 300;
-    padding: 2rem;
+    padding: 1rem;
 }
 .graphic-txt h1 {
     font-size: 250%;
@@ -578,14 +708,18 @@ width:40px;
 
 }
 .managedIt-img img{
-    height:100%;
+    display: none;
+}
+.managedIt-img1{
+    height:auto;
     width: 100vw;
+display: block;
 }
 .managedIt-txt{
     font-family: Roboto;  
     font-size: 110%;
     font-weight: 300;
-    padding: 2rem;
+    padding: 1rem;
     height:auto;
     width: 100vw;
 }
@@ -599,17 +733,30 @@ width:40px;
     padding-top: 3rem;
     margin-top: 3rem;
 }
-.partner h1{
-    
+.partner h1{   
     font-size: 250%;
 }
-.company img{
+.company {
     display: grid;
     justify-content: center;
+}
+.company img{    
     position: relative;
     padding: 1rem;
-  margin-right: 0rem;
+    margin-right: 0rem; 
     
+}
+.company1, .company3{
+    height: auto;
+    width:40%;
+}
+.company2{
+    height: auto;
+    width: 30%;
+}
+.company4{
+    height: auto;
+    width:40%;
 }
 .client-profile{
     font-family: Roboto;  
@@ -617,7 +764,13 @@ width:40px;
   justify-content: center;
   height: auto;
   width: 100vw;
-    padding-top: 1rem;
+    padding-top: 2rem;
+}
+.client-link a{
+    font-size: 90%;
+    font-weight: 500;
+    margin-right: 2rem;
+    text-align: center;
 }
 .client-profile h1{
     font-size: 250%;
@@ -638,13 +791,20 @@ width:40px;
    
 }
 .client-info img{
+    margin-top: 1rem;
     height: 80px;  
 
 }
+.clientImage img{
+    height: auto;
+    width: 20%;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    }
 .client-info{  
     height: auto;
     width: 100vw;
-    padding: 2rem;
+    padding: 1rem;
     margin-right: 0rem;
 }
 .projects{

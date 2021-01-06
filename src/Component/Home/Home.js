@@ -42,6 +42,13 @@ import youtube from '../Images/youtube.svg';
 import instra from '../Images/instra.svg';
 import linkedin from '../Images/inkedin.svg';
 import fb from '../Images/fb.svg';
+import ham from '../Images/Ham barg -s.png';
+
+import clientImg1 from '../Images/clientImg (1).png';
+import clientImg2 from '../Images/clientImg (2).png';
+import clientImg3 from '../Images/clientImg (3).png';
+import clientImg4 from '../Images/clientImg (4).png';
+import clientImg5 from '../Images/clientImg (5).png';
 
 
 
@@ -51,12 +58,170 @@ const Home = () => {
         Aos.init({ durations: 2000 })
     }, [])
 
+    window.onload = function () {
+        let hamburgerArea = document.getElementById("Ham");
+        hamburgerArea.addEventListener("click", function () {
+            const hamburgerMenuArea = document.getElementById("menu2");
+            hamburgerMenuArea.style.display = "block";
+            const backdropArea = document.getElementById("backdrop");
+            backdropArea.style.display = "block";
+        })
+
+        let backdropArea = document.getElementById("backdrop");
+        backdropArea.addEventListener("click", function () {
+            const hamburgerMenuArea = document.getElementById("menu2");
+            hamburgerMenuArea.style.display = "none";
+            const backdropArea = document.getElementById("backdrop");
+            backdropArea.style.display = "none";
+        })
+    }
+
     return (
         <div className="mainBody">
             <nav className="navbarBody">
                 <div className="logo">
                 <a href="/"><img className="logo" src={logo} alt="" srcset="" /></a>
                 </div>
+                <div className="hamburger">
+                    <div className="menu1" >
+                        <img id="Ham" src={ham} alt=""/>
+                    </div>
+                    <div className="menu2" id="menu2">
+                    <div className="h">
+                    <a> <Link activeClass="active"
+                        to="whoWeAre"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        offset={-120}
+                        duration={500}
+                        delay={500}
+                        isDynamic={true}
+                        ignoreCancelEvents={false}
+                    >Who We are</Link></a>
+                    <a>
+                        <Link activeClass="active"
+                            to="company-profile"
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={20}
+                            duration={500}
+                            delay={500}
+                            isDynamic={true}
+                            ignoreCancelEvents={false}
+                        >Company profile</Link>
+                    </a>                  
+                        <a id="nav-dropdown">
+                        <DropdownButton id="dropdown-basic-button" title="Products and Services">
+                        <Dropdown.Item >
+                        <Link activeClass="active"
+                                                    to="product"
+                                                    spy={true}
+                                                    smooth={true}
+                                                    hashSpy={true}
+                                                    offset={-130}
+                                                    duration={500}
+                                                    delay={500}
+                                                    isDynamic={true}
+                                                    ignoreCancelEvents={false}
+                                                >AR/VR Solutions</Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item >
+                        <Link activeClass="active"
+                                                    to="game-dev"
+                                                    spy={true}
+                                                    smooth={true}
+                                                    hashSpy={true}
+                                                    offset={-120}
+                                                    duration={500}
+                                                    delay={500}
+                                                    isDynamic={true}
+                                                    ignoreCancelEvents={false}
+                                                >Game development</Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item >
+                        <Link activeClass="active"
+                                                    to="graphicDesign"
+                                                    spy={true}
+                                                    smooth={true}
+                                                    hashSpy={true}
+                                                    offset={-100}
+                                                    duration={500}
+                                                    delay={500}
+                                                    isDynamic={true}
+                                                    ignoreCancelEvents={false}
+                                                >3D Graphics Design and Animation</Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item >
+                        <Link activeClass="active"
+                                                    to="managedIT"
+                                                    spy={true}
+                                                    smooth={true}
+                                                    hashSpy={true}
+                                                    offset={-100}
+                                                    duration={500}
+                                                    delay={500}
+                                                    isDynamic={true}
+                                                    ignoreCancelEvents={false}
+                                                >Managed IT Service</Link>
+                        </Dropdown.Item>
+                        </DropdownButton>
+                        </a>
+                    <a>
+                        <Link activeClass="active"
+                            to="partner"
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={-220}
+                            duration={500}
+                            delay={500}
+                            isDynamic={true}
+                            ignoreCancelEvents={false}
+                        >Partner Company</Link>
+                    </a>
+                    <a>
+                        <Link activeClass="active"
+                            to="client-profile"
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={-110}
+                            duration={500}
+                            delay={500}
+                            isDynamic={true}
+                            ignoreCancelEvents={false}
+                        >Client Profile</Link> </a>
+                    <a>
+                        <Link activeClass="active"
+                            to="projects"
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={-100}
+                            duration={500}
+                            delay={500}
+                            isDynamic={true}
+                            ignoreCancelEvents={false}
+                        >Our Projects</Link> </a>
+                    <a>
+                        <Link activeClass="active"
+                            to="footer"
+                            spy={true}
+                            smooth={true}
+                            hashSpy={true}
+                            offset={-250}
+                            duration={500}
+                            delay={500}
+                            isDynamic={true}
+                            ignoreCancelEvents={false}
+                        >Contact Us</Link> </a>   
+                   </div>
+                    </div>
+                   
+                </div>
+                <span id="backdrop" className="backdrop"></span>
                 <div className="links">
                
                     <a> <Link activeClass="active"
@@ -315,14 +480,15 @@ const Home = () => {
                         </p>
                     </div>
             </section>
-            <section data-aos="zoom-in-right" className="product" id="product">              
+            <section data-aos="zoom-in-right" className="product" id="product"> 
+                             
                     <div className="txt-3">
                         <h1>Products and Services </h1>
+                        <img className="third-img1" src={graphicImg} alt="" srcset="" />
                         <h2>AR/VR Solutions </h2>
                         <p>AR/VR presents a whole new world of possibilities for modern businesses. All enterprises share a common goal of getting clients and customers to use their services and their products.
-                To achieve this, businesses must educate users about their products, engage meaningfully with potential clients and create lasting connections for future commerce. There are ways in which AR is already being implemented to further these goals and even more ways in which it has yet to be used.
+                        To achieve this, businesses must educate users about their products, engage meaningfully with potential clients and create lasting connections for future commerce. There are ways in which AR is already being implemented to further these goals and even more ways in which it has yet to be used.
                         </p>
-
                     </div>
                     <div className="third-img">
                         <img src={graphicImg} alt="" srcset="" />
@@ -359,6 +525,7 @@ const Home = () => {
                    
                         <div className="managedIt-txt">
                         <h1>Managed IT Service</h1>
+                        <img className="managedIt-img1" src={manageIt} alt="" />
                         <p>We provide a one stop IT solution for your business. IT should not be on your to do list rather managed by a team of experts who will ensure your business runs smoothly on the digital highway. Whether you are a SaaS user and need your entire stack managed or only need help with your infrastructure we will engage our consultants and solutions architects to understand your requirements and engineer a solution Tylor fits for your business. We have over 10 years of experience in managing IT services and our service model is built around a few core areas.</p>
                         <ul>
                             <li>UI/UX Design</li>
@@ -390,6 +557,12 @@ const Home = () => {
                     <section className="client-profile" id="client-profile">
                    
                         <h1>Client Profile</h1>
+                        <div className="client-link">
+                            <a href="">AR/VR Solutions</a>
+                            <a href="">Game Development</a>
+                            <a href="">3D Design and Animation</a>
+                            <a href="">Managed IT Service</a>
+                        </div>
                         <div className="client-details">
                             <div className="client-info 1">
                                 <img src={cient2} alt=""/>
@@ -409,7 +582,14 @@ const Home = () => {
                                 <b>World Bank: </b>
                                 </p>
                             </div>
-                    </div>           
+                        </div> 
+                        <div className="clientImage">
+                            <img src={clientImg1} alt=""/>
+                            <img src={clientImg2} alt=""/>
+                            <img src={clientImg3} alt=""/>
+                            <img src={clientImg4} alt=""/>
+                            <img id="clientImage5" src={clientImg5} alt=""/>
+                        </div>          
                    
                     </section>
                   
