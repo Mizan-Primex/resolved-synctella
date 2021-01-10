@@ -626,7 +626,7 @@ const Home = () => {
                         </div>          
                    
                     </section>
-                  
+              
 
             <section data-aos="zoom-out-right" className="projects" id="projects">
                     

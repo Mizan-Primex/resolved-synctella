@@ -392,25 +392,28 @@ margin-right: 2rem;
     display: flex;
     height: 500px;
     width: 100vw;
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #F4F4F4;
     padding: 3rem;
 }
 .project-details{
     margin-left: 3rem;
-    height: 100%;
-    width: 600px;
+    height: auto;
+    width: 60vw;
     padding: 1rem;
 }
 .project-details label{
     font-size: 150%;
 }
 .project-details p{
-    font-size: 80%;
+    font-size: 100%;
     font-weight: 300;
 }
 .project-txt h1{
+    height: auto;
+    width: 10vw;
     font-size: 430%;
+    font-weight: 1000;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
 }
@@ -844,6 +847,8 @@ margin-right: 2rem;
 }
 .project-txt h1{
     font-size: 220%;
+    height: auto;
+    width: 100vw;
     writing-mode: unset;
     transform: rotate(0deg);
     text-align:center;
