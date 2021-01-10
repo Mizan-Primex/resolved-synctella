@@ -44,9 +44,9 @@ import linkedin from '../Images/inkedin.svg';
 import fb from '../Images/fb.svg';
 import ham from '../Images/Ham barg -s.png';
 
-import clientImg1 from '../Images/clientImg (1).png';
-import clientImg2 from '../Images/clientImg (2).png';
-import clientImg3 from '../Images/clientImg (3).png';
+import clientImg1 from '../Images/image 2.png';
+import clientImg2 from '../Images/image 3.png';
+import clientImg3 from '../Images/image 4.png';
 import clientImg4 from '../Images/clientImg (4).png';
 import clientImg5 from '../Images/clientImg (5).png';
 
@@ -494,7 +494,7 @@ const Home = () => {
                         <img src={graphicImg} alt="" srcset="" />
                     </div>              
             </section>
-          <section className="game-dev" id="game-dev">
+            <section className="game-dev" id="game-dev">
              
                         <div className="game-dev-img">
                             <img src={gameDev} alt="" />
@@ -521,7 +521,7 @@ const Home = () => {
                             </p>
                         </div>
             </section>
-                    <section className="managedIT" id="managedIT">
+            <section className="managedIT" id="managedIT">
                    
                         <div className="managedIt-txt">
                         <h1>Managed IT Service</h1>
@@ -542,7 +542,7 @@ const Home = () => {
                    
                     </section>
                    
-                    <section data-aos="fade-up" className="partner" id="partner">
+            <section data-aos="fade-up" className="partner" id="partner">
                   
                         <h1>Partner Company</h1>
                         <div className="company">            
@@ -554,7 +554,7 @@ const Home = () => {
                   
                     </section>
                   
-                    <section className="client-profile" id="client-profile">
+            <section className="client-profile" id="client-profile">
                    
                         <h1>Client Profile</h1>
                         <div className="client-link">
@@ -567,34 +567,68 @@ const Home = () => {
                             <div className="client-info 1">
                                 <img src={cient2} alt=""/>
                                 <p>
-                                <b>Executive Motors</b> is the sole distributor of BMW luxury vehicles in Dhaka, Bangladesh. Since 2019 executive motors has been using our AR/VR platform called Auto Lab for showcasing their vehicles to their customers and achieved tremendous success.
+                                <h4>Executive Motors</h4> is the sole distributor of BMW luxury vehicles in Dhaka, Bangladesh. Since 2019 executive motors has been using our AR/VR platform called Auto Lab for showcasing their vehicles to their customers and achieved tremendous success.
                                 </p>
                             </div>
                             <div className="client-info berger">
                                     <img src={cient1} alt=""/>
                                 <p>
-                                <b>Berger Paint</b>  has adopted the AR/VR solution called C3 Lab which allows their customers to choose paint and texture in an interactive and immersive 3D environment. This allows their customer  to visualize their home before picking the right color.
+                                <h4>Berger Paint</h4>  has adopted the AR/VR solution called C3 Lab which allows their customers to choose paint and texture in an interactive and immersive 3D environment. This allows their customer  to visualize their home before picking the right color.
                                 </p>
                             </div>
                             <div className="client-info 3">
                                     <img src={cient3} alt=""/>
                                 <p>
-                                <b>World Bank: </b>
+                                <h4>The World Bank Group:</h4>
+                                Wehave been providing Managed IT Service (Infrastructure & Help Desk Management) to World Bank Group, Bangladesh for last four (04) years.
                                 </p>
                             </div>
+                            <div className="client-info 4">
+                                    <img className="siemens" src={clientImg4} alt=""/>
+                                <p>
+                                <h4>Siemens Bangladesh:</h4>
+                                Synctella has provided CAD Services to SIEMENS, Bangladesh.
+                                </p>
+                            </div>
+
                         </div> 
-                        <div className="clientImage">
-                            <img src={clientImg1} alt=""/>
-                            <img src={clientImg2} alt=""/>
-                            <img src={clientImg3} alt=""/>
-                            <img src={clientImg4} alt=""/>
-                            <img id="clientImage5" src={clientImg5} alt=""/>
+
+                        <div className="client-details">
+                            <div className="client-info 5">
+                                <img src={clientImg5} alt=""/>
+                                <p>
+                                <h4>UNDP-JSF:</h4>
+                                Successfully implemented the capacity development project under UNPP for Judiciary Depertment.
+                                </p>
+                            </div>
+                            <div className="client-info 6">
+                                <img src={clientImg1} alt=""/>
+                                <p>
+                                <h4>State Bank of India:</h4>
+                                We have provided Managed IT Service (Infrastructure Management) to State Bank of India, Bangladesh for last four (03) years.
+                                </p>
+                            </div>
+                            <div className="client-info 7">
+                                <img src={clientImg2} alt=""/>
+                                <p>
+                                <h4>Save The Children International:</h4>
+                                We have been providing Managed IT Service (Software Development for Web & Mobile Applications)) to World Bank Group, Bangladesh for last four (07) years.
+                                </p>
+                            </div>
+                            <div className="client-info 8">
+                                <img src={clientImg3} alt=""/>
+                                <p>
+                                <h4>Tullow Bangladesh:</h4>
+                                Synctella has provided CAD Services to Tullow, Bangladesh.
+                                </p>
+                            </div>
+                            
                         </div>          
                    
                     </section>
                   
 
-                    <section data-aos="zoom-out-right" className="projects" id="projects">
+            <section data-aos="zoom-out-right" className="projects" id="projects">
                     
                         <div className="project-txt">
                             <h1>Our Projects</h1>
@@ -617,7 +651,7 @@ const Home = () => {
                         </div> 
                     
                     </section>
-                    <section  className="footer" id="footer">
+            <section  className="footer" id="footer">
                     
                         <div className="footer-txt">
                             <label>Contact Us</label> 

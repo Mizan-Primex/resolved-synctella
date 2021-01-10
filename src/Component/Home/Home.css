@@ -2,13 +2,7 @@
  .mainBody{
     overflow: hidden;
  }
- /* .navbarBody::after,
- .navbarBody::before{
-      
-      content:"";
-      display: block;
-      clear: both;
-  } */
+
  .navbarBody{
     position: fixed;
     top: 0;
@@ -132,6 +126,7 @@
 }
 .second-section{
     display: flex;
+    align-Items: center;
     height:100%;
     width: 100vw;
 }
@@ -144,7 +139,7 @@
     font-weight: 300;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-top: 3rem;
+    margin-top: 0rem;
 }
 
 .txt-2 h1{
@@ -176,7 +171,7 @@
     padding: 3rem;
     margin-left: 2.5rem;
     z-index: 10;
-    margin-top: 6rem;
+    margin-top: 8rem;
     
 }
 .profile p{
@@ -196,6 +191,7 @@
 }
 .product{
     display: flex;
+    align-Items: center;
     height: 100%;
     width: 100vw;
     position: relative;
@@ -223,7 +219,7 @@
     font-size: 215%;
 }
 .txt-3 p{
-    font-size: 110%;
+    font-size: 100%;
     padding-left: 2rem;
     font-weight: 300;
 }
@@ -254,6 +250,7 @@
 
 .graphicDesign{
     display: flex;
+    align-Items: center;
     height:100%;
     width: 100vw;
     margin-top: 3rem;
@@ -265,7 +262,7 @@
 .graphic-txt{
     font-family: Roboto;
     text-align: right;
-    font-size: 110%;
+    font-size: 100%;
     font-weight: 300;
     padding: 3rem;
 }
@@ -277,6 +274,7 @@
 
 .managedIT{
     display: flex;
+    align-Items: center;
     height:100%;
     width: 100vw;
     margin-top: 3rem;
@@ -358,8 +356,9 @@
     padding-top: 20px;
     height: auto;
     width: 200px;
-    font-size: 110%;
+    font-size: 100%;
     font-weight: 300;
+    text-align: left;
    
 }
 .client-info img{
@@ -383,6 +382,10 @@ margin-right: 2rem;
 #clientImage5{
     height: auto;
     width: 5%;
+}
+.siemens{
+    height: auto;
+    width: 16vw;
 }
 .projects{
     font-family: Roboto;
@@ -632,6 +635,7 @@ margin-right: 2rem;
     width: 100vw;
     padding: 1rem;
     margin-left: 0rem;
+    margin-top: 2rem;
     z-index: 10;
     
 }
@@ -655,9 +659,12 @@ margin-right: 2rem;
     margin-bottom: 2rem;
     display: block;
 }
-.txt-3 {
-    
+.txt-3 {    
     padding: 1rem;
+}
+.txt-3 p {
+    padding-left: 1rem;
+    
 }
  .game-dev{
     display:grid;
@@ -713,7 +720,7 @@ margin-right: 2rem;
 .managedIt-img1{
     height:auto;
     width: 100vw;
-display: block;
+    display: block;
 }
 .managedIt-txt{
     font-family: Roboto;  
@@ -722,6 +729,11 @@ display: block;
     padding: 1rem;
     height:auto;
     width: 100vw;
+}
+.managedIt-txt ul {
+    font-size: 100%;
+    list-style: square;
+    font-weight: 500;
 }
 .partner{
     display: grid;
