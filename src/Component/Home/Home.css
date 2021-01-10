@@ -179,7 +179,7 @@
     font-weight: 300;
 }
 .profile ul{
-    list-style: none;
+    list-style: square;
 }
 .profile h1{
     font-size: 200%;
@@ -296,7 +296,7 @@
 }
 .managedIt-txt ul{
     font-size: 100%;
-    list-style: none;
+    list-style: square;
     font-weight: 500;
 }
 .partner{
