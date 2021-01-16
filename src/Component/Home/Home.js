@@ -512,7 +512,7 @@ const Home = () => {
                             <img src={gameDev} alt="" />
                         </div>
                         <div className="game-dev-txt">
-                            <h1>Game development</h1>
+                            <h1>Game Development</h1>
                             <p>
                     We build AR/VR games for Android, iOS as well as for Windows phones. This is to take you to the world of new experience and welcome you to a whole new immersive environment. We work with a talented team of artists, designers and developers who have years of experience designing and developing cutting edge graphics and creative story lines.
 
@@ -674,9 +674,9 @@ const Home = () => {
                                             <input type="email" placeholder="Your Email" />
                                             <textarea type="text" placeholder="Your massage within 500 words" cols="40" rows="5" />
                                         </form>
-                                    
+                                        <button type="submit">Send</button>
                                 </div>
-                                <button type="submit">Send</button>
+                                
                            </div>
                         <div className="footer-link">
                             <Link to="">
