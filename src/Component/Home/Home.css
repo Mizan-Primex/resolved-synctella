@@ -815,6 +815,7 @@ button:focus{
     padding-left: 2%;
 }
 .txt-3 h2{
+    font-size: 150%;
     margin-top: 15%;
     padding-left: 2%;
 }
@@ -844,6 +845,10 @@ button:focus{
    z-index: 10;
    margin-top: 0rem;
    margin-bottom: 2rem;
+}
+.game-dev-txt h1 {
+    font-size: 150%;
+    
 }
 .graphicDesign{
     display: grid;
