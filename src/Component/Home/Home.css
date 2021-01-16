@@ -794,14 +794,16 @@ button:focus{
     display: block;
 }
 .txt-3 {    
-    padding: 1rem;
+    padding: 0rem;
 }
 .txt-3 h1{
     font-size: 200%;
     font-weight: 700;
+    padding-left: 2%;
 }
 .txt-3 h2{
     margin-top: 15%;
+    padding-left: 2%;
 }
 .txt-3 p {
     padding-left: 1rem;
@@ -871,16 +873,18 @@ button:focus{
     font-family: Roboto;  
     font-size: 110%;
     font-weight: 300;
-    padding: 1rem;
+    padding: 0rem;
     height:auto;
     width: 100vw;
     margin-top: 1rem;
 }
 .managedIt-txt h1{
     font-size: 150%; 
+    padding-left: 3%;
 }
 .managedIt-txt p{
     margin-top: 1rem;
+    padding: 3%;
 }
 .managedIt-txt ul {
     font-size: 100%;
