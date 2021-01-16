@@ -327,6 +327,7 @@
 .managedIt-txt h1{
     font-size: 200%;
     font-weight: 500;
+    padding-bottom: 2rem;
 }
 .managedIt-txt ul{
     font-size: 100%;
@@ -541,7 +542,7 @@ button:focus{
 @media only screen and (max-width: 768px) {
     .navbarBody {
         background-color: #fff;
-        height: 20%;
+        height: 15%;
         width: 100vw;
     }
    
