@@ -381,8 +381,9 @@
 .client-profile h1{
     font-size: 250%;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-weight: 700;
+    margin-top: 4rem;
 }
 .client-details{
     display: flex; 
