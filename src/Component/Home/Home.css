@@ -173,11 +173,11 @@
     padding: 0rem;
     margin-left: 0rem;
     z-index: 10;
-    margin: 5%;
+    margin-top: 5%;
 }
 .profile{
     display: flex;
-    justify-content: space-around;   
+    justify-content: space-between;   
 }
 .leftSide{
     height: auto;

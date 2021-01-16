@@ -24,7 +24,7 @@ import feature3 from '../Images/Vector3.svg';
 
 import secondImg1 from '../Images/New folder/image_who_we_are-1.png';
 
-import companyprofile from '../Images/New folder/image_company_profile_mission-2.png';
+import companyprofile from '../Images/New folder/adsa.jpg';
 
 import product from '../Images/New folder/image_Product_Service_3DGraphics.png';
 
