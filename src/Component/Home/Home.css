@@ -497,7 +497,7 @@ form textarea {
     width: 100%;
 }
 button{
-    height: 2rem;
+    height: auto;
     width: 25%;
     background-color:#000;
     border-radius: 6px ! important;
