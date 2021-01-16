@@ -24,7 +24,7 @@ import feature3 from '../Images/Vector3.svg';
 
 import secondImg1 from '../Images/New folder/image_who_we_are-1.png';
 
-import companyprofile from '../Images/New folder/image_company_profile_mission-1.png';
+import companyprofile from '../Images/New folder/image_company_profile_mission-2.png';
 
 import product from '../Images/New folder/image_Product_Service_3DGraphics.png';
 
@@ -361,9 +361,10 @@ const Home = () => {
                                 <Carousel>
                         <Carousel.Item>
                             <div className="a">
-                                <div className="txt-1">
-                                    <h1>A CUSTOMER CENTRIC CONSULTANCY COMPANY</h1>
-                                    <p>“We’re not competitor obsessed, we’re customer obsessed. We start with what the customer needs and we work backwards.” - Jeff Bazos</p>
+                            <div className="txt-1">
+                                    <h1>CONTOURS OF EXTREME TECHNOLOGY WITH CREATIVITY</h1>
+                                    <p>"Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution." - Alber Einstein
+                                    </p>
                                 </div>
                                 <div className="first">
                                     <img
@@ -377,10 +378,9 @@ const Home = () => {
                         </Carousel.Item>
                         <Carousel.Item>
                             <div className="a">
-                                <div className="txt-1">
-                                    <h1>CONTOURS OF EXTREME TECHNOLOGY WITH CREATIVITY</h1>
-                                    <p>"Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution." - Alber Einstein
-</p>
+                            <div className="txt-1">
+                                    <h1>A CUSTOMER CENTRIC CONSULTANCY COMPANY</h1>
+                                    <p>“We’re not competitor obsessed, we’re customer obsessed. We start with what the customer needs and we work backwards.” - Jeff Bazos</p>
                                 </div>
                                 <div className="first">
                                     <img
@@ -389,6 +389,9 @@ const Home = () => {
                                         alt="First slide"
                                     />
                                 </div>
+
+
+                                
                             </div>
                         </Carousel.Item>
                         <Carousel.Item>
@@ -449,7 +452,7 @@ const Home = () => {
                     </div>
                     <div data-aos="flip-left" className="txt-2">
                         <h1>Who We are</h1>
-                        <p>Technology has taken a quantum leap in the last few decades and it is entering the age of robotics, artificial intelligence and virtualization so that your business can get the maximum output with lower cost. Synctella is a technology startup for the data driven business environment of today and tomorrow. Our core competence lies in developing applications in Virtual and Augmented reality from mission critical solutions to game development. Synctella also provides Managed IT Service, Mobile and Web application development and cloud migration support. With an onshore presence of management and customer service and offshore presence of developers and partner companies our cardinal goal is to deliver our customers premium solutions that will cater to their needs, ready for the modern world of technology while keeping the cost to a minimum.
+                        <p>Technology has taken a quantum leap in the last few decades and it is entering the age of robotics, artificial intelligence and virtualization so that your business can get the maximum output with lower cost. Synctella is a technology startup for the data driven business environment of today and tomorrow. Our core competence lies in developing applications in Virtual and Augmented reality from mission critical solutions to game development. Synctella also provides Managed IT Service, Mobile and Web application development and cloud migration support. Combined with an onshore presence of management and customer service and offshore presence of developers and partner companies our cardinal goal is to deliver our customers premium solutions that will cater to their needs, ready for the modern world of technology while keeping the cost to a minimum.
                     </p>
                     </div>
             </section>
@@ -459,25 +462,34 @@ const Home = () => {
                         <img src={companyprofile} alt="" srcset="" />
                         <span className="layer" ></span>                   
                          </div>
+                      
+                    <div className="profileBody">
+                    <h1>Company Profile</h1>
                     <div className="profile">
-                        <h1>Company Profile</h1>
-                        <h2>Vision</h2>
-                        <p>We believe that Augmented Reality and Virtual Reality will play a key role in the business of the future. AR and VR will become an extension of how business is initiated, communicated and conducted. As a company built for the future our vision is to explore, invent and reinvent how we see the new digital world and how we interact with it. Through virtualization and augmentation, we strive to open that world to new possibilities that are yet to be imagined.
-                </p>
-                        <h2>Why Choose Synctella</h2>
-                        <p>For the rapidly evolving technologies and complexity in product features, we engage with customers at every step of the product engineering process, to help convert complex product vision into tangible designs that are scalable and successful.
-                   <ul>
-                                <li>Free Initial Consultancy.</li>
-                                <li>  Domain Focused Expertise.</li>
-                                <li> Promises upgradation to help you succeed in your industry.</li>
-                                <li>We give high priority to every job we undertake.</li>
-                                <li>  Consultative and Innovative Solutions.</li>
-                                <li> Standard Methodology with different package offerings.</li>
-                                <li>Choosing tools that solve today’s problems and anticipate tomorrow’s needs.</li>
-                                <li>Appropriate development processes with continual improvements.</li>
-                            </ul>
 
-                        </p>
+                            <div className="leftSide">
+                                
+                                <h2>Vision</h2>
+                                <p>We believe that Augmented Reality and Virtual Reality will play a key role in the business of the future. AR and VR will become an extension of how business is initiated, communicated and conducted. As a company built for the future our vision is to explore, invent and reinvent how we see the new digital world and how we interact with it. Through virtualization and augmentation, we strive to open that world to new possibilities that are yet to be imagined.
+                                </p>
+                            </div>
+                            <div className="rightSide">
+                                <h2>Why Choose Synctella</h2>
+                                <p>For the rapidly evolving technologies and complexity in product features, we engage with customers at every step of the product engineering process, to help convert complex product vision into tangible designs that are scalable and successful.
+                                <ul>
+                                    <li>Free Initial Consultancy.</li>
+                                    <li>  Domain Focused Expertise.</li>
+                                    <li> Promises upgradation to help you succeed in your industry.</li>
+                                    <li>We give high priority to every job we undertake.</li>
+                                    <li>  Consultative and Innovative Solutions.</li>
+                                    <li> Standard Methodology with different package offerings.</li>
+                                    <li>Choosing tools that solve today’s problems and anticipate tomorrow’s needs.</li>
+                                    <li>Appropriate development processes with continual improvements.</li>
+                                </ul>
+
+                                </p>
+                            </div>
+                            </div>
                     </div>
             </section>
             <section data-aos="zoom-in-right" className="product" id="product"> 
@@ -651,17 +663,22 @@ const Home = () => {
                         </div> 
                     
                     </section>
-            <section  className="footer" id="footer">
-                    
-                        <div className="footer-txt">
-                            <label>Contact Us</label> 
-                            <p>
-                    Address: 3413 Lorenzo Dr, Plano, TX 75074 <br/>
-                            Email: contact@synctella.com <br/>
-                            Phone: +1-496-929-5958, +1-510-299-5458
-                            </p>
-                        </div>
-                        <div className="footer-link">.
+            <section  className="footer" id="footer">                  
+                       
+                            
+                           <div className="contactInfo">
+                                <div className="form">
+                                        <label>Contact Us</label> 
+                                        <form className="form-control">
+                                            <input type="text" placeholder="Your Name" />
+                                            <input type="email" placeholder="Your Email" />
+                                            <textarea type="text" placeholder="Your massage within 500 words" cols="40" rows="5" />
+                                        </form>
+                                    
+                                </div>
+                                <button type="submit">Send</button>
+                           </div>
+                        <div className="footer-link">
                             <Link to="">
                                 <img src={youtube} alt=""/>
                             </Link>
