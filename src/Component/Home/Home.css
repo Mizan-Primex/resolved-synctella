@@ -272,7 +272,8 @@
 }
 .game-dev-txt h1{
     font-size: 200%;
-    font-weight: 500; 
+    font-weight: 500;
+    padding-bottom: 1rem;
 }
 
 .graphicDesign{
