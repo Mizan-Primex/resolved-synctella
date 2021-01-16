@@ -144,7 +144,7 @@
 
 .txt-2 h1{
     font-weight: 700;
-    font-size:200%; 
+    font-size:250%; 
     margin-bottom: 8%;
     
 }
@@ -714,6 +714,7 @@ button:focus{
 }
 .txt-2 h1{
     margin-top: 5%;
+    font-size: 200%;
     margin-bottom: 1rem;
 }
 .company-profile{
@@ -765,9 +766,10 @@ button:focus{
 .profileBody h1 {
     font-size: 200%;
     padding-bottom: 0rem;
-    text-align: center;
+    text-align: left;
     color: #000;
     margin-top: 6%;
+    margin-left: 5%;
 }
 
 .product{
@@ -843,7 +845,7 @@ button:focus{
     padding: 1rem;
 }
 .graphic-txt h1 {
-    font-size: 200%;
+    font-size: 150%;
     padding-bottom: 0rem;
     margin-top: 15%;
 
@@ -983,7 +985,7 @@ button:focus{
     margin-left: 0rem;
     height: auto;
     width: 100vw;
-    padding: 1rem;
+    padding: 5%;
 }
 .project-details label{
     font-size: 150%;
