@@ -716,6 +716,7 @@ button:focus{
     margin-top: 5%;
     font-size: 200%;
     margin-bottom: 1rem;
+    font-weight: 700;
 }
 .company-profile{
     display:grid;
@@ -770,6 +771,7 @@ button:focus{
     color: #000;
     margin-top: 6%;
     margin-left: 5%;
+    font-weight: 700;
 }
 
 .product{
@@ -796,6 +798,7 @@ button:focus{
 }
 .txt-3 h1{
     font-size: 200%;
+    font-weight: 700;
 }
 .txt-3 h2{
     margin-top: 15%;
@@ -874,7 +877,7 @@ button:focus{
     margin-top: 1rem;
 }
 .managedIt-txt h1{
-    font-size: 200%; 
+    font-size: 150%; 
 }
 .managedIt-txt p{
     margin-top: 1rem;
@@ -896,6 +899,7 @@ button:focus{
 }
 .partner h1{   
     font-size: 200%;
+    font-weight: 700;
 }
 .company {
     display: grid;
@@ -936,6 +940,7 @@ button:focus{
 .client-profile h1{
     font-size: 200%;
     text-align: center;
+    font-weight: 700;
 }
 .client-details{
     display: grid; 
@@ -1035,6 +1040,7 @@ button:focus{
 }
 .form label {
     font-size: 200%;
+    font-weight: 700;
 }
 .form-control{
     border: none !important;
