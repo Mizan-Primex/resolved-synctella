@@ -225,7 +225,7 @@
 }
 .third-img img{
     height: auto;
-    width: 60vw;
+    width: 50vw;
 }
 .third-img1{
     display: none;
@@ -287,7 +287,7 @@
 }
 .graphic-img img{
     height:auto;
-    width: 65vw;
+    width: 50vw;
 }
 .graphic-txt{
     font-family: Roboto;
@@ -314,7 +314,7 @@
 }
 .managedIt-img img{
     height:auto;
-    width: 65vw;
+    width: 50vw;
     display: block;
 }
 .managedIt-img1{
@@ -506,11 +506,11 @@ margin-right: 2rem;
     width: 100% ! important;
 }
 .contactInfo{
-    border: .5px solid #000;
+    /* border: .5px solid #000; */
     padding: 2%;
     border-radius: 5px;
     height: auto;
-    width: 28%;
+    width: 25%;
 }
 form{
     display:grid;
