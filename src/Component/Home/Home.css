@@ -1082,14 +1082,14 @@ button:focus{
     background-color: #F4F4F4;
     padding: 0rem;
     height: auto;
-    width: 100vw;
+    width: 100%;
 }
 .project-details{
     display: grid;
     justify-content: center;
     margin-left: 0rem;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding: 10%;
 }
 .project-details label{
@@ -1097,7 +1097,7 @@ button:focus{
  /* font-size: 30px; */
 }
 .project-details p{
-    font-size: 110%;
+    font-size: 100%;
     font-weight: 300;
     text-align: justify;
 }
