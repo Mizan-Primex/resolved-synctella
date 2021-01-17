@@ -1085,6 +1085,8 @@ button:focus{
     width: 100vw;
 }
 .project-details{
+    display: grid;
+    justify-content: center;
     margin-left: 0rem;
     height: auto;
     width: 100vw;
