@@ -132,13 +132,13 @@
 }
 .second-section img{
     height:auto;
-    width: 60vw;
+    width: 50vw;
 }
 .txt-2{
     font-family: Roboto;
     font-weight: 300;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-top: 0rem;
 }
 
@@ -575,7 +575,7 @@ button:focus{
     z-index: 100;
     right: 2rem;
     bottom: 70px;
-    border-radius: 50%;
+    border-radius: 80% 50%;
 }
 .copyright{
     font-family: Roboto;
