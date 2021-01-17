@@ -179,6 +179,9 @@
     display: flex;
     justify-content: space-between;   
 }
+.profile p{
+    padding-right:5%;
+}
 .leftSide{
     height: auto;
     width: 45%;
@@ -212,14 +215,13 @@
     font-size: 150%;
   
 }
-.product{
+.productBody{
     display: flex;
     align-Items: center;
     height: 100%;
     width: 100vw;
     position: relative;
-    margin-top: 2rem;
-
+   
 }
 .third-img img{
     height: auto;
@@ -234,10 +236,11 @@
     font-weight: 300;
     padding: 3rem;
 }
-.txt-3 h1{
+.product h1{
     font-size: 250%;
     font-weight: 700;
-    padding-bottom: 2rem;
+    padding: 5%;
+    text-align: center;
 }
 .txt-3 h2{
     font-size: 200%;
@@ -246,7 +249,6 @@
 }
 .txt-3 p{
     font-size: 100%;    
-    padding-left: 2rem;
     font-weight: 300;
 }
  .game-dev{
@@ -457,41 +459,63 @@ margin-right: 2rem;
 .footer{
     font-family: Roboto;
     display: flex;
-    justify-content: center;
-    padding: 3rem;
+    justify-content: space-around;
+    padding: 5%;
     
 }
 .form{
     font-size: 110%;
-    text-align: center;
+    text-align: left;
+    /* height: auto;
+    width: 40vw; */
 }
-.form label{
+.nameBody{
+    display: flex;
+    justify-content: space-between;
+}
+.nameBody input{
+    width: 45%;
+}
+.contactDetails{
+    padding-top: 6%;
+}
+.contactDetails label{
    font-size: 250%;
    font-weight: 700;
 }
 .footer-link{
-    display: grid; 
-    justify-content: center;
+    display: flex; 
+    justify-content: space-between;
     margin-top: 5%;
    
 }
 .footer-link  a{
-    height: 30px !important;
-    width: 40px !important;
-    margin-left: 20px;
+    height: auto !important;
+    /* width: 100% !important; */    
     margin-top: 0%;
+}
+.footer-link img{
+    height: 70%;
+    /* width: auto; */
+    margin-right: 15%;
 }
 
 .form-control{
     border: none !important;
     height: auto! important;
-    width: 40vw ! important;
+    width: 100% ! important;
+}
+.contactInfo{
+    border: .5px solid #000;
+    padding: 2%;
+    border-radius: 5px;
+    height: auto;
+    width: 28%;
 }
 form{
     display:grid;
     justify-content:center;
-    height: auto;
-    width: 40vw;
+    
 }
 form input{
     background-color:#F7F7F7;
@@ -510,7 +534,7 @@ form textarea {
     height: 100%;
     width: 100%;
 }
-button{
+ button{
     height: auto;
     width: 25%;
     background-color:#000;
@@ -519,8 +543,11 @@ button{
     color:#fff;
     font-weight: 500;
     text-align: center;
-    /* margin-left: 5% ! important; */
     
+}
+.form button{
+    position: relative;
+    right: -70%;
 }
 ::-webkit-input-placeholder {
     /* text-align: center; */
@@ -537,6 +564,17 @@ button:focus{
 }
 .hamburger{
     display: none;
+}
+
+.upbtn{
+    height: auto;
+    width: 5%;
+    opacity: .85; 
+    position: fixed;
+    float: right;
+    z-index: 100;
+    right: 2rem;
+    bottom: 70px;
 }
 
 /* mobile view*/
@@ -703,7 +741,7 @@ button:focus{
 
 .txt-1{
     font-family: Roboto;
-    padding-left: 5%;
+    padding-left: 7%;
     height:20rem;
     width: 80vw;
     align-self: center;
@@ -724,13 +762,18 @@ button:focus{
 .txt-2 {   
     padding-left: 1rem;
     margin-top: 5%;
-   
+    padding: 0 7% 0 7%;   
+}
+.txt-2 p{
+    text-align: justify;
+    padding: 2%;
 }
 .txt-2 h1{
     margin-top: 5%;
     font-size: 200%;
     margin-bottom: 1rem;
     font-weight: 700;
+    padding-left: 2%;
 }
 .company-profile{
     display:grid;
@@ -748,6 +791,7 @@ button:focus{
     justify-content: center;
     position: relative;
     margin: 0rem;
+    padding: 3%;
 }
 .profile{ 
     display: grid;
@@ -770,6 +814,10 @@ button:focus{
     opacity: 1;
     border-radius: 0px 0px 0px 0px;
 }
+.leftSide p{
+    text-align: justify;
+    padding-right: 7%;
+}
 .rightSide {
     height: auto;
     width: 100vw;
@@ -778,6 +826,11 @@ button:focus{
     opacity: 1;
     border-radius: 0px 0px 0px 0px;
 }
+.rightSide p{
+    text-align: justify;
+    padding-right: 7%;
+}
+
 .profileBody h1 {
     font-size: 200%;
     padding-bottom: 0rem;
@@ -810,21 +863,21 @@ button:focus{
 .txt-3 {    
     padding: 0rem;
 }
-.txt-3 h1{
+.product h1{
     font-size: 200%;
     font-weight: 700;
-    padding-left: 2%;
+    margin-top: 4%;
 }
 .txt-3 h2{
     font-size: 150%;
     margin-top: 15%;
-    padding-left: 2%;
+    padding-left: 7%;
 }
 .txt-3 p {
-    padding-left: 1rem;
+    padding-left: 7%;
     height: auto;
     width: 90vw;
-    
+    text-align: justify;    
 }
  .game-dev{
     display:grid;
@@ -849,6 +902,11 @@ button:focus{
 }
 .game-dev-txt h1 {
     font-size: 150%;
+    padding-left: 4%;
+    
+}
+.game-dev-txt p {
+    padding: 4%;
     
 }
 .graphicDesign{
@@ -866,7 +924,7 @@ button:focus{
     width:100vw;
     font-size: 110%;
     font-weight: 300;
-    padding: 1rem;
+    padding: 7%;
 }
 .graphic-txt h1 {
     font-size: 150%;
@@ -874,6 +932,10 @@ button:focus{
     margin-top: 15%;
 
 }
+.graphic-txt p{
+    text-align: justify;
+}
+  
 
 .managedIT{
     display: grid;
@@ -899,16 +961,18 @@ button:focus{
 }
 .managedIt-txt h1{
     font-size: 150%; 
-    padding-left: 3%;
+    padding-left: 7%;
 }
 .managedIt-txt p{
     margin-top: 1rem;
-    padding: 3%;
+    padding: 7%;
+    text-align: justify;
 }
 .managedIt-txt ul {
     font-size: 100%;
     list-style: square;
     font-weight: 500;
+    padding-left: 20%;
 }
 .partner{
     display: grid;
@@ -954,6 +1018,9 @@ button:focus{
   width: 100vw;
     padding-top: 2rem;
 }
+.client-link{
+    padding: 5%
+}
 .client-link a{
     font-size: 90%;
     font-weight: 500;
@@ -978,6 +1045,8 @@ button:focus{
     font-size: 100%;
     font-weight: 300;
     margin-top: 1rem;
+    padding: 0 5% 0 5%;
+    text-align: justify;
    
 }
 .client-info img{
@@ -1022,6 +1091,7 @@ button:focus{
 .project-details p{
     font-size: 110%;
     font-weight: 300;
+    text-align: justify;
 }
 .project-txt h1{
     font-size: 200%;
@@ -1040,35 +1110,51 @@ button:focus{
     width: 100vw;
     padding: 1rem;
 }
-.footer-txt{
-    font-size: 110%;
-    text-align: center;
+
+.contactDetails label {
+    font-size: 200%;
+    font-weight: 700;
+    padding-left: 25%;
 }
-.footer-txt label{
-   font-size: 215%;
+.contactDetails p{
+    font-size: 100%;
+    font-weight: 300;
+    padding: 0 2% 0 5%;
 }
 .footer-link{
     display: flex;
     justify-content: center;
-    padding: 10%;
+    padding: 6% 6% 10% 6%;
 }
 .footer-link  img{
     height: 30px;
     margin-left: 20px;
 }
-.footer-link a {
-   
-    width: auto !important;
-   
+.footer-link a {   
+    width: auto !important;   
+}
+.contactInfo {
+    height: auto;
+    width: 100%;
 }
 .form label {
-    font-size: 200%;
+    font-size: 150%;
     font-weight: 700;
 }
 .form-control{
     border: none !important;
     height: auto! important;
-    width: 80vw ! important;
+    width: 100% ! important;
+}
+.upbtn{
+    height: auto;
+    width: 10%;
+    /* opacity: .85; 
+    position: fixed;
+    float: right;
+    z-index: 100;
+    right: 2rem;
+    bottom: 70px; */
 }
 
 

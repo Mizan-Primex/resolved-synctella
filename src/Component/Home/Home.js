@@ -49,7 +49,7 @@ import clientImg2 from '../Images/image 3.png';
 import clientImg3 from '../Images/image 4.png';
 import clientImg4 from '../Images/clientImg (4).png';
 import clientImg5 from '../Images/clientImg (5).png';
-
+import upBtn from '../Images/Up button.png'
 
 
 const Home = () => {
@@ -241,7 +241,7 @@ const Home = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={20}
+                            offset={-100}
                             duration={500}
                             delay={500}
                             isDynamic={true}
@@ -323,7 +323,7 @@ const Home = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={-110}
+                            offset={-100}
                             duration={500}
                             delay={500}
                             isDynamic={true}
@@ -347,7 +347,7 @@ const Home = () => {
                             spy={true}
                             smooth={true}
                             hashSpy={true}
-                            offset={-250}
+                            offset={-120}
                             duration={500}
                             delay={500}
                             isDynamic={true}
@@ -357,7 +357,7 @@ const Home = () => {
                 </div>
                 
             </nav>
-            <section className="first-section" >
+            <section className="first-section" id="home" >
                                 <Carousel>
                         <Carousel.Item>
                             <div className="a">
@@ -493,9 +493,9 @@ const Home = () => {
                     </div>
             </section>
             <section data-aos="zoom-in-right" className="product" id="product"> 
-                             
-                    <div className="txt-3">
-                        <h1>Products and Services </h1>
+                     <h1>Products and Services </h1>    
+                 <div className="productBody">
+                 <div className="txt-3">                        
                         <img className="third-img1" src={graphicImg} alt="" srcset="" />
                         <h2>AR/VR Solutions </h2>
                         <p>AR/VR presents a whole new world of possibilities for modern businesses. All enterprises share a common goal of getting clients and customers to use their services and their products.
@@ -504,7 +504,9 @@ const Home = () => {
                     </div>
                     <div className="third-img">
                         <img src={graphicImg} alt="" srcset="" />
-                    </div>              
+                    </div>  
+
+                    </div>            
             </section>
             <section className="game-dev" id="game-dev">
              
@@ -663,36 +665,61 @@ const Home = () => {
                         </div> 
                     
                     </section>
+           
+                    <a href="" id="upbtn">
+                <Link activeClass="active"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={-100}
+                    duration={500}
+                    delay={500}
+                    isDynamic={true}
+                    ignoreCancelEvents={false}
+                >
+                    <img className="upbtn" src={upBtn} alt="" /> </Link></a>
+           
             <section  className="footer" id="footer">                  
                        
-                            
+                            <div className="contactDetails">
+                                    <label>Contact Us</label> 
+                                <p> Address: 3413 Lorenzo Dr, Plano, TX 75074 <br/>
+                                    Email: contact@synctella.com <br/>
+                                    Phone: +1-496-929-5958, +1-510-299-5458 <br/>
+                                    </p>
+                                <div className="footer-link">
+                                    <Link to="">
+                                        <img src={youtube} alt=""/>
+                                    </Link>
+                                    <Link to="">
+                                        <img src={instra} alt=""/>
+                                    </Link>
+                                    <Link to="">
+                                        <img src={linkedin} alt=""/>
+                                    </Link>
+                                    <Link to="">
+                                        <img src={fb} alt=""/>
+                                    </Link>
+                                </div>
+                            </div>
                            <div className="contactInfo">
                                 <div className="form">
-                                        <label>Contact Us</label> 
+                                        
                                         <form className="form-control">
-                                            <input type="text" placeholder="Your Name" />
+                                            <label>Name</label> 
+                                            <div className="nameBody">
+                                            <input type="text" placeholder="First Name" />
+                                            <input type="text" placeholder="Last Name" />
+                                            </div>
+                                            <label>Email</label> 
                                             <input type="email" placeholder="Your Email" />
+                                            <label>Massage</label> 
                                             <textarea type="text" placeholder="Your massage within 500 words" cols="40" rows="5" />
                                         </form>
-                                        <button type="submit">Send</button>
-                                </div>
-                                
-                           </div>
-                        <div className="footer-link">
-                            <Link to="">
-                                <img src={youtube} alt=""/>
-                            </Link>
-                            <Link to="">
-                                <img src={instra} alt=""/>
-                            </Link>
-                            <Link to="">
-                                <img src={linkedin} alt=""/>
-                            </Link>
-                            <Link to="">
-                                <img src={fb} alt=""/>
-                            </Link>
-                        </div>
-                  
+                                    <button type="submit">Send</button>
+                                </div>                                
+                           </div>                     
                     </section>
                     
          
