@@ -722,7 +722,7 @@ const Home = () => {
                            </div>  
                                              
                     </section>
-                    <section className="copyright">
+            <section className="copyright">
                         <article>
                            Copyright ©synctella inc.
                         </article> 
