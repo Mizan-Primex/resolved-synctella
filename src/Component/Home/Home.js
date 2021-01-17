@@ -234,7 +234,7 @@ const Home = () => {
                         delay={500}
                         isDynamic={true}
                         ignoreCancelEvents={false}
-                    >Who We are</Link></a>
+                    >Who We Are</Link></a>
                     <a>
                         <Link activeClass="active"
                             to="company-profile"
@@ -246,7 +246,7 @@ const Home = () => {
                             delay={500}
                             isDynamic={true}
                             ignoreCancelEvents={false}
-                        >Company profile</Link>
+                        >Company Profile</Link>
                     </a>                  
                         <a id="nav-dropdown">
                         <DropdownButton id="dropdown-basic-button" title="Products and Services">
@@ -451,7 +451,7 @@ const Home = () => {
                         <img src={secondImg1} alt="" />
                     </div>
                     <div data-aos="flip-left" className="txt-2">
-                        <h1>Who We are</h1>
+                        <h1>Who We Are</h1>
                         <p>Technology has taken a quantum leap in the last few decades and it is entering the age of robotics, artificial intelligence and virtualization so that your business can get the maximum output with lower cost. Synctella is a technology startup for the data driven business environment of today and tomorrow. Our core competence lies in developing applications in Virtual and Augmented reality from mission critical solutions to game development. Synctella also provides Managed IT Service, Mobile and Web application development and cloud migration support. Combined with an onshore presence of management and customer service and offshore presence of developers and partner companies our cardinal goal is to deliver our customers premium solutions that will cater to their needs, ready for the modern world of technology while keeping the cost to a minimum.
                     </p>
                     </div>
