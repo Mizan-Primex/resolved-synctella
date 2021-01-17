@@ -577,6 +577,11 @@ button:focus{
     bottom: 70px;
     /* border-radius: 50%; */
 }
+.copyright{
+    font-family: Roboto;
+    text-align: center;
+    padding-bottom: 3%;
+}
 
 /* mobile view*/
 @media only screen and (max-width: 768px) {

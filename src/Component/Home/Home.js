@@ -719,7 +719,13 @@ const Home = () => {
                                         </form>
                                     <button type="submit">Send</button>
                                 </div>                                
-                           </div>                     
+                           </div>  
+                                             
+                    </section>
+                    <section className="copyright">
+                        <article>
+                           Copyright ©synctella inc.
+                        </article> 
                     </section>
                     
          
