@@ -1218,7 +1218,7 @@ button:focus{
 }
 .form {
     height: auto;
-    /* width: 100%; */
+    width: 90%;
 }
 .form label {
     font-size: 150%;
