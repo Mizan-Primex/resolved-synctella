@@ -549,7 +549,7 @@ margin-right: 2rem;
 .form-control{
     border: none !important;
     height: auto! important;
-    width: 100% ! important;
+    /* width: 100% ! important; */
 }
 .contactInfo{
     /* border: .5px solid #000; */
@@ -1228,7 +1228,7 @@ button:focus{
 .form-control{
     border: none !important;
     height: auto! important;
-    width: 100% ! important;
+    /* width: 100% ! important; */
 }
 .upbtn{
     height: auto;
