@@ -1165,7 +1165,7 @@ button:focus{
 }
 .footerBody{
     height: auto;
-    width: 100%;
+    width: 90%;
     padding: 0;
 }
 .footer{
@@ -1190,8 +1190,7 @@ button:focus{
 .contactDetails1 {
     display: block;
 }
-.contactDetails1 label {
-    
+.contactDetails1 label {    
     font-size: 200%;
     font-weight: 700;
     padding-left: 25%;
