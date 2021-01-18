@@ -1172,8 +1172,8 @@ button:focus{
     font-family: Roboto;
     display: grid;
     justify-content: center;
-    /* height: auto;
-    width: 100%; */
+    height: auto;
+    width: 100%;
     /* padding: 1rem; */
 }
 
