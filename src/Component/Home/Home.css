@@ -1166,14 +1166,15 @@ button:focus{
 .footerBody{
     height: auto;
     width: 100%;
+    padding: 0;
 }
 .footer{
     font-family: Roboto;
     display: grid;
     justify-content: center;
-    height: auto;
-    width: 100%;
-    padding: 1rem;
+    /* height: auto;
+    width: 100%; */
+    /* padding: 1rem; */
 }
 
 .footerBody h1 {
