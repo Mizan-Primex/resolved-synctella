@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './Home.css';
 import Aos from 'aos';
@@ -10,7 +10,7 @@ import { Carousel, Dropdown, DropdownButton } from 'react-bootstrap';
 //images
 
 import logo from '../Images/synctella-logo.png'
-import * as Scroll from 'react-scroll';
+// import * as Scroll from 'react-scroll';
 import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
@@ -49,7 +49,7 @@ import clientImg2 from '../Images/image 3.png';
 import clientImg3 from '../Images/image 4.png';
 import clientImg4 from '../Images/clientImg (4).png';
 import clientImg5 from '../Images/clientImg (5).png';
-import upBtn from '../Images/Up button.png'
+import upBtn from '../Images/images.png'
 
 
 const Home = () => {
@@ -74,6 +74,18 @@ const Home = () => {
             const backdropArea = document.getElementById("backdrop");
             backdropArea.style.display = "none";
         })
+    }
+
+    const [userData, setUserData] = useState([]);
+    console.log(userData);
+
+    const data = () => {
+        let fname = document.getElementById("fname").value;
+        let sname = document.getElementById("sname").value;
+        let email = document.getElementById("email").value;
+        let massage = document.getElementById("massage").value;
+
+        setUserData(fname + " " + sname + " "  + email + " "  + massage); 
     }
 
     return (
@@ -248,8 +260,8 @@ const Home = () => {
                             ignoreCancelEvents={false}
                         >Company Profile</Link>
                     </a>                  
-                        <a id="nav-dropdown">
-                        <DropdownButton id="dropdown-basic-button" title="Products and Services">
+                        <a className="DropdownButton" id="nav-dropdown">
+                        <DropdownButton   id="dropdown-basic-button" title="Products and Services">
                         <Dropdown.Item >
                         <Link activeClass="active"
                                                     to="product"
@@ -357,6 +369,7 @@ const Home = () => {
                 </div>
                 
             </nav>
+           
             <section className="first-section" id="home" >
                                 <Carousel>
                         <Carousel.Item>
@@ -451,20 +464,21 @@ const Home = () => {
                         <img src={secondImg1} alt="" />
                     </div>
                     <div data-aos="flip-left" className="txt-2">
-                        <h1>Who We Are</h1>
+                        <h1>WHO WE ARE</h1>
                         <p>Technology has taken a quantum leap in the last few decades and it is entering the age of robotics, artificial intelligence and virtualization so that your business can get the maximum output with lower cost. Synctella is a technology startup for the data driven business environment of today and tomorrow. Our core competence lies in developing applications in Virtual and Augmented reality from mission critical solutions to game development. Synctella also provides Managed IT Service, Mobile and Web application development and cloud migration support. Combined with an onshore presence of management and customer service and offshore presence of developers and partner companies our cardinal goal is to deliver our customers premium solutions that will cater to their needs, ready for the modern world of technology while keeping the cost to a minimum.
                     </p>
                     </div>
             </section>
+           
             <section className="company-profile" id="company-profile">
                
                     <div className="company-img">
                         <img src={companyprofile} alt="" srcset="" />
                         <span className="layer" ></span>                   
-                         </div>
+                    </div>
                       
                     <div className="profileBody">
-                    <h1>Company Profile</h1>
+                    <h1>COMPANY PROFILE</h1>
                     <div className="profile">
 
                             <div className="leftSide">
@@ -492,8 +506,9 @@ const Home = () => {
                             </div>
                     </div>
             </section>
+           
             <section data-aos="zoom-in-right" className="product" id="product"> 
-                     <h1>Products and Services </h1>    
+                     <h1>PRODUCTS & SERVICES</h1>    
                  <div className="productBody">
                  <div className="txt-3">                        
                         <img className="third-img1" src={graphicImg} alt="" srcset="" />
@@ -501,6 +516,7 @@ const Home = () => {
                         <p>AR/VR presents a whole new world of possibilities for modern businesses. All enterprises share a common goal of getting clients and customers to use their services and their products.
                         To achieve this, businesses must educate users about their products, engage meaningfully with potential clients and create lasting connections for future commerce. There are ways in which AR is already being implemented to further these goals and even more ways in which it has yet to be used.
                         </p>
+                        
                     </div>
                     <div className="third-img">
                         <img src={graphicImg} alt="" srcset="" />
@@ -508,6 +524,7 @@ const Home = () => {
 
                     </div>            
             </section>
+           
             <section className="game-dev" id="game-dev">
              
                         <div className="game-dev-img">
@@ -535,6 +552,7 @@ const Home = () => {
                             </p>
                         </div>
             </section>
+           
             <section className="managedIT" id="managedIT">
                    
                         <div className="managedIt-txt">
@@ -554,11 +572,11 @@ const Home = () => {
                         </div>
 
                    
-                    </section>
-                   
+            </section> 
+          
             <section data-aos="fade-up" className="partner" id="partner">
                   
-                        <h1>Partner Company</h1>
+                        <h1>PARTNER COMPANY</h1>
                         <div className="company">            
                             <a  href="http://www.alienide.com/wp-content/uploads/2017/04/ALiENIDE-Interactive-Logo-Top-Left.png" target="_blank"><img className="company1" src={partner1} alt=""/></a>
                             <a  href="http://www.dreamerzlab.com/" target="_blank"> <img className="company2" src={partner2} alt=""/></a>
@@ -566,11 +584,11 @@ const Home = () => {
                             <a  href="http://stargroup-bd.com" target="_blank"><img className="company4" src={partner4} alt=""/></a>
                         </div>
                   
-                    </section>
+            </section>
                   
             <section className="client-profile" id="client-profile">
                    
-                        <h1>Client Profile</h1>
+                        <h1>CLIENT PROFILE</h1>
                         <div className="client-link">
                             <a href="">AR/VR Solutions</a>
                             <a href="">Game Development</a>
@@ -639,9 +657,8 @@ const Home = () => {
                             
                         </div>          
                    
-                    </section>
+            </section>
               
-
             <section data-aos="zoom-out-right" className="projects" id="projects">
                     
                         <div className="project-txt">
@@ -664,9 +681,9 @@ const Home = () => {
                             </p>
                         </div> 
                     
-                    </section>
+            </section>
            
-                    <a href="" id="upbtn">
+            <a href="" id="upbtn">
                 <Link activeClass="active"
                     to="home"
                     spy={true}
@@ -678,58 +695,80 @@ const Home = () => {
                     isDynamic={true}
                     ignoreCancelEvents={false}
                 >
-                    <img className="upbtn" src={upBtn} alt="" /> </Link></a>
+                <img className="upbtn" src={upBtn} alt="" /> </Link>
+            </a>
            
-            <section  className="footer" id="footer">                  
-                       
+            <section  className="footerBody" id="footer">                  
+                         <h1>CONTACT US</h1> 
+                            <div className="footer">
                             <div className="contactDetails">
-                                    <label>Contact Us</label> 
-                                <p> Address: 3413 Lorenzo Dr, Plano, TX 75074 <br/>
-                                    Email: contact@synctella.com <br/>
-                                    Phone: +1-496-929-5958, +1-510-299-5458 <br/>
-                                    </p>
-                                <div className="footer-link">
-                                    <Link to="">
-                                        <img src={youtube} alt=""/>
-                                    </Link>
-                                    <Link to="">
-                                        <img src={instra} alt=""/>
-                                    </Link>
-                                    <Link to="">
-                                        <img src={linkedin} alt=""/>
-                                    </Link>
-                                    <Link to="">
-                                        <img src={fb} alt=""/>
-                                    </Link>
-                                </div>
+                                <h1>CONTACT US</h1> 
+                                  <p> Address: 3413 Lorenzo Dr, Plano, TX 75074 <br/>
+                                      Email: contact@synctella.com <br/>
+                                      Phone: +1-496-929-5958, +1-510-299-5458 <br/>
+                                      </p>
+                                  <div className="footer-link">
+                                      <Link to="">
+                                          <img src={youtube} alt=""/>
+                                      </Link>
+                                      <Link to="">
+                                          <img src={instra} alt=""/>
+                                      </Link>
+                                      <Link to="">
+                                          <img src={linkedin} alt=""/>
+                                      </Link>
+                                      <Link to="">
+                                          <img src={fb} alt=""/>
+                                      </Link>
+                                  </div>
+                              </div>
+                             <div className="contactInfo">
+                                  <div className="form">                                        
+                                      <form className="form-control">
+                                          <label>Name</label> 
+                                          <div className="nameBody">
+                                          <input id="fname" type="text" placeholder="First Name" />
+                                          <input id="sname" type="text" placeholder="Last Name" />
+                                          </div>
+                                          <label>Email</label> 
+                                          <input id="email" type="email" placeholder="Your Email" />
+                                          <label>Massage</label> 
+                                          <textarea id="massage" type="text" placeholder="Your massage within 500 words" cols="40" rows="5" />
+                                      </form>
+                                      <button onClick={data} type="submit">Send</button>
+                                  </div>                                
+                             </div>  
+                             <div className="contactDetails1">
+                                      {/* <label>CONTACT US</label>  */}
+                                  <p> Address: 3413 Lorenzo Dr, Plano, TX 75074 <br/>
+                                      Email: contact@synctella.com <br/>
+                                      Phone: +1-496-929-5958, +1-510-299-5458 <br/>
+                                      </p>
+                                  <div className="footer-link">
+                                      <Link to="">
+                                          <img src={youtube} alt=""/>
+                                      </Link>
+                                      <Link to="">
+                                          <img src={instra} alt=""/>
+                                      </Link>
+                                      <Link to="">
+                                          <img src={linkedin} alt=""/>
+                                      </Link>
+                                      <Link to="">
+                                          <img src={fb} alt=""/>
+                                      </Link>
+                                  </div>
+                              </div>
                             </div>
-                           <div className="contactInfo">
-                                <div className="form">
-                                        
-                                        <form className="form-control">
-                                            <label>Name</label> 
-                                            <div className="nameBody">
-                                            <input type="text" placeholder="First Name" />
-                                            <input type="text" placeholder="Last Name" />
-                                            </div>
-                                            <label>Email</label> 
-                                            <input type="email" placeholder="Your Email" />
-                                            <label>Massage</label> 
-                                            <textarea type="text" placeholder="Your massage within 500 words" cols="40" rows="5" />
-                                        </form>
-                                    <button type="submit">Send</button>
-                                </div>                                
-                           </div>  
                                              
-                    </section>
+            </section>
+          
             <section className="copyright">
                         <article>
                            Copyright ©synctella inc.
                         </article> 
                     </section>
                     
-         
-
         </div >
 
     );

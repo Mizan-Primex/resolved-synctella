@@ -18,13 +18,24 @@
     font-weight: 500 ! important;  
     font-family: Roboto ! important;
     color: #000 ! important;
-    background-color: #fff ! important;
-    border-color: #fff ! important; 
+    background-color: transparent ! important;
+    border-color: transparent ! important; 
 }
 .btn{
     padding:0rem ! important;
     font-size: 95% ! important;
 }
+button:focus {
+    outline: none ! important;
+}
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none ! important;
+}
+/* .DropdownButton{
+    height: auto;  
+    width: 120px;
+    margin-right: 1rem;
+} */
 .links a{
     text-decoration: none ! important;
     margin-right: .6rem;
@@ -32,19 +43,26 @@
     color: #000;
     font-weight: 500; 
     cursor: pointer; 
-    background-color: #fff;    
+    background-color: #fff;  
+    /* height: auto;  
+    width: 120px; */
 }
-.links a:hover{
-    zoom: 1.05;
-    /* box-shadow: 0 4px 19px rgba(39,36,36,0.25); */
+.links  a:hover{
+    /* background-color: #05454E;
+   box-shadow: 5px 5px 5px 15px #05454E; */
+   font-weight: bold;
+   /* font-size: 12px; */
 }
+/* Link:hover{
+    color: red! important;
+} */
 .links{
     margin-top: .6rem;
     padding: 2rem;
     display: flex;
 }
 .logo img {
-    margin-left: 50px;
+    margin-left: 80px;
      height: auto;
      width: 200px;
      padding: 0rem;
@@ -79,10 +97,11 @@
     margin-left: 1rem;
 }
 .fea h2{
-    font-size: 80%;
+    font-size: 98%;
+    margin-bottom: 0rem;
 }
 .feature p{
-    font-size: 70%;
+    font-size: 90%;
    font-weight: 300;
 }
 
@@ -146,34 +165,35 @@
     font-weight: 700;
     font-size:250%; 
     margin-bottom: 8%;
-    
+    color: #000;    
 }
 .txt-2 p{
     font-size: 100%;
     font-weight: 300;
+    text-align: justify;
 }
 .company-profile{
     display:grid;
+    justify-content: center;
+    margin-top: 2rem;  
+}
+ .company-img{
+     display: none;  
+}
+/* .company-img img{
     height: 100%;
-    width: 100vw;
-    margin-top: 2rem;
-}
-.company-img img{
-    height: auto;
     width: 100%;
-}
+} */ 
 .profileBody{
     display: grid;
     justify-content: center;
-    position: absolute;
     font-family: Roboto;
     color: #fff;
-    height: auto;
-    width: auto;
-    padding: 0rem;
-    margin-left: 0rem;
-    z-index: 10;
+    padding: 5% 0 6% 0;
     margin-top: 5%;
+    background-image: url('../Images/New folder/adsa.jpg');
+    background-size: 100% 100%;
+
 }
 .profile{
     display: flex;
@@ -201,6 +221,7 @@
 .profile p{
     font-size: 100%;
     font-weight: 300;
+    text-align: justify;
 }
 .profile ul{
     list-style: square;
@@ -250,27 +271,27 @@
 .txt-3 p{
     font-size: 100%;    
     font-weight: 300;
+    text-align: justify;
 }
  .game-dev{
     display:grid;
-    height: 100%;
-    width: 100vw;
+    height: auto;
+    width: 100%;
     margin-top: 3rem;
     opacity: .9;
 }
-.game-dev-img img{
-    height: auto;
-    width: 100vw;
+.game-dev-img{
+   display: none;
 }
 .game-dev-txt{
-    position: absolute;
+    /* position: absolute; */
     color: #fff;
-   text-align: center;
-   font-size: 110%;
-   font-weight: 300;
-   padding: 6rem;
-   z-index: 10;
-   margin-top: 3rem;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 300;
+    padding: 10%;
+    background-image: url('../Images/New folder/image_Product_Service_GameDev.png');
+    background-size: 100% 100%;
 }
 .game-dev-txt h1{
     font-size: 200%;
@@ -304,6 +325,9 @@
 .graphic-txt {
     font-size: 100%;
 }
+.graphic-txt p{
+    text-align: justify;
+}
 .managedIT{
     display: flex;
     align-Items: center;
@@ -330,6 +354,9 @@
     font-size: 200%;
     font-weight: 500;
     padding-bottom: 2rem;
+}
+.managedIt-txt p{
+    text-align: justify;
 }
 .managedIt-txt ul{
     font-size: 100%;
@@ -406,8 +433,8 @@
 .client-info{  
     height: auto;
     width: 200px;
-    padding: 3rem;
-    margin-right: 5rem;
+    padding: 5%;
+    margin-right: 5%;
 }
 .clientImage{
     margin-left: 1rem;
@@ -429,7 +456,7 @@ margin-right: 2rem;
 .projects{
     font-family: Roboto;
     display: flex;
-    height: 500px;
+    height: auto;
     width: 100vw;
     /* justify-content: center; */
     background-color: #F4F4F4;
@@ -456,11 +483,25 @@ margin-right: 2rem;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
 }
+.footerBody{
+    padding: 5%;
+    height: auto;
+    width: 100%;
+}
+.footerBody h1{
+    display: none ;
+   
+}
+.contactDetails h1{
+    display: block;
+    font-size: 250%;
+    font-weight: 700;
+
+}
 .footer{
     font-family: Roboto;
     display: flex;
     justify-content: space-around;
-    padding: 5%;
     
 }
 .form{
@@ -479,9 +520,14 @@ margin-right: 2rem;
 .contactDetails{
     padding-top: 6%;
 }
+
 .contactDetails label{
    font-size: 250%;
    font-weight: 700;
+}
+.contactDetails1{
+    display: none;
+    padding-top: 6%;
 }
 .footer-link{
     display: flex; 
@@ -568,14 +614,14 @@ button:focus{
 
 .upbtn{
     height: auto;
-    width: 5%;
+    width: 3.5%;
     opacity: .55; 
     position: fixed;
     float: right;
     z-index: 100;
     right: 2rem;
     bottom: 70px;
-    border-radius: 80% 50%;
+    border-radius: 50% 50%;
 }
 .copyright{
     font-family: Roboto;
@@ -712,7 +758,7 @@ button:focus{
 }
 .fea{
     height: auto;
-    width: 50vw;
+    width: 60vw;
 }
 .feature p{
     font-size: 90%;
@@ -786,11 +832,12 @@ button:focus{
     height: 100%;
     width: 100vw;
 }
+.company-img{
+    display: block;
+}
 .company-img img{
-    
     height: auto;
     width: 100%;
-    opacity: .9;
 }
 .profileBody{
     display: grid;
@@ -798,6 +845,7 @@ button:focus{
     position: relative;
     margin: 0rem;
     padding: 3%;
+    background-image: none;
 }
 .profile{ 
     display: grid;
@@ -870,8 +918,8 @@ button:focus{
     padding: 0rem;
 }
 .product h1{
-    font-size: 200%;
-    font-weight: 700;
+    font-size: 190%;
+    font-weight: 750;
     margin-top: 4%;
 }
 .txt-3 h2{
@@ -892,7 +940,11 @@ button:focus{
     margin-top: 3rem;
     opacity: .9;
 }
+.game-dev-img{
+    display: block;
+}
 .game-dev-img img{
+    height: auto;
     width: 100vw;
 }
 .game-dev-txt{
@@ -905,6 +957,7 @@ button:focus{
    z-index: 10;
    margin-top: 0rem;
    margin-bottom: 2rem;
+   background-image: none;
 }
 .game-dev-txt h1 {
     font-size: 150%;
@@ -1115,19 +1168,33 @@ button:focus{
     display: grid;
     justify-content: center;
     height: auto;
-    width: 100vw;
+    width: 100%;
     padding: 1rem;
 }
 
-.contactDetails label {
+.footerBody h1 {
+    display: block;
+    font-size: 200%;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5%;
+}
+.contactDetails {
+    display: none;
+}
+.contactDetails1 {
+    display: block;
+}
+.contactDetails1 label {
+    
     font-size: 200%;
     font-weight: 700;
     padding-left: 25%;
 }
-.contactDetails p{
+.contactDetails1 p{
     font-size: 100%;
     font-weight: 300;
-    padding: 0 2% 0 5%;
+    padding: 5% 2% 0 5%;
 }
 .footer-link{
     display: flex;
