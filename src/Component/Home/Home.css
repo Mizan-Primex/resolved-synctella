@@ -1215,7 +1215,7 @@ button:focus{
 }
 .contactInfo {
     height: auto;
-    width: 100%;
+    width: 100vw;
 }
 .form {
     height: auto;
