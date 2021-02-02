@@ -236,7 +236,7 @@ const Home = () => {
                 <span id="backdrop" className="backdrop"></span>
                 <div className="links">
                
-                    <a> <Link activeClass="active"
+                     <Link activeClass="active"
                         to="whoWeAre"
                         spy={true}
                         smooth={true}
@@ -246,8 +246,8 @@ const Home = () => {
                         delay={500}
                         isDynamic={true}
                         ignoreCancelEvents={false}
-                    >Who We Are</Link></a>
-                    <a>
+                    >Who We Are</Link>
+                   
                         <Link activeClass="active"
                             to="company-profile"
                             spy={true}
@@ -259,7 +259,7 @@ const Home = () => {
                             isDynamic={true}
                             ignoreCancelEvents={false}
                         >Company Profile</Link>
-                    </a>                  
+                          
                         <a className="DropdownButton" id="nav-dropdown">
                         <DropdownButton   id="dropdown-basic-button" title="Products and Services">
                         <Dropdown.Item >
@@ -316,7 +316,7 @@ const Home = () => {
                         </Dropdown.Item>
                         </DropdownButton>
                         </a>
-                    <a>
+                  
                         <Link activeClass="active"
                             to="partner"
                             spy={true}
@@ -328,8 +328,8 @@ const Home = () => {
                             isDynamic={true}
                             ignoreCancelEvents={false}
                         >Partner Company</Link>
-                    </a>
-                    <a>
+                
+              
                         <Link activeClass="active"
                             to="client-profile"
                             spy={true}
@@ -340,8 +340,8 @@ const Home = () => {
                             delay={500}
                             isDynamic={true}
                             ignoreCancelEvents={false}
-                        >Client Profile</Link> </a>
-                    <a>
+                        >Client Profile</Link> 
+            
                         <Link activeClass="active"
                             to="projects"
                             spy={true}
@@ -352,8 +352,8 @@ const Home = () => {
                             delay={500}
                             isDynamic={true}
                             ignoreCancelEvents={false}
-                        >Our Projects</Link> </a>
-                    <a>
+                        >Our Projects</Link> 
+            
                         <Link activeClass="active"
                             to="footer"
                             spy={true}
@@ -364,7 +364,7 @@ const Home = () => {
                             delay={500}
                             isDynamic={true}
                             ignoreCancelEvents={false}
-                        >Contact Us</Link> </a>
+                        >Contact Us</Link> 
                         
                 </div>
                 
@@ -733,7 +733,7 @@ const Home = () => {
                                           <label>Email</label> 
                                           <input id="email" type="email" placeholder="Your Email" />
                                           <label>Massage</label> 
-                                          <textarea id="massage" type="text" placeholder="Your massage within 500 words" cols="40" rows="5" />
+                                          <textarea id="massage" type="text" placeholder="Your massage within 500 words" cols="40" rows="3" />
                                       </form>
                                       <button onClick={data} type="submit">Send</button>
                                   </div>                                
@@ -765,7 +765,7 @@ const Home = () => {
           
             <section className="copyright">
                         <article>
-                           Copyright ©synctella inc.
+                           Copyright ©Synctella inc.
                         </article> 
                     </section>
                     
