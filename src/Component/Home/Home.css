@@ -561,17 +561,22 @@ input{
     /* width: 100% ! important; */
 }
 .contactInfo{
-    /* border: .5px solid #000; */
-    padding: 2%;
-    border-radius: 5px;
-    height: auto;
+    /* border: .5px solid #000;
+    border-radius: 5px; */
+    padding: 2%;    
+    height: 100%;
     width: 40%;
     margin-top: 3%;
 }
 form{
     display:grid;
     justify-content:center;
+    padding: 2%;
     
+}
+.contactInfo:hover{
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 10px #F7F7F7;
 }
 form input{
     background-color:#F7F7F7;
@@ -638,6 +643,7 @@ button:focus{
     font-family: Roboto;
     text-align: center;
     padding-bottom: 3%;
+    margin-top: 2%;
 }
 
 /* mobile view*/

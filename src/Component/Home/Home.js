@@ -734,8 +734,9 @@ const Home = () => {
                                           <input id="email" type="email" placeholder="Your Email" />
                                           <label>Massage</label> 
                                           <textarea id="massage" type="text" placeholder="Your massage within 500 words" cols="40" rows="3" />
+                                          <button onClick={data} type="submit">Send</button>
                                       </form>
-                                      <button onClick={data} type="submit">Send</button>
+                                     
                                   </div>                                
                              </div>  
                              <div className="contactDetails1">
